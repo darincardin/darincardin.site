@@ -1,0 +1,34 @@
+
+
+
+
+	.photo{
+		float: right;
+		width: 280px;
+
+		@media only screen and (max-width: 600px) {		
+			&{ width: 200px;}	
+		}
+
+		@media only screen and (max-width: 499px) {		
+			&{ width: 120px;}	
+		}
+	}
+	
+	.skill {
+		display: inline-block;
+		white-space: nowrap;
+		vertical-align: top;
+	}
+
+		
+	table thead td{ font-weight: bold;}
+	table td{ padding: 0 5px;white-space: nowrap;}
+			
+			
+
+	
+
+
+
+	

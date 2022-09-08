@@ -1,0 +1,81 @@
+ 
+ 
+#resume {
+ 
+
+	.download{
+		text-align:center;
+		padding-bottom: 10px;
+		font-weight: 600;
+	}
+ 
+	h3:after {
+		background-color: #fff;
+		width: 263px;
+		bottom: 0;
+		left: 50%;
+		margin-left: -131px;
+		content: '';
+		position: absolute;
+		display: block;
+		height: 1px;
+	}
+
+	a[aria-expanded] {
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+		xxtext-decoration: underline;
+		user-select: none;
+
+		h4 {
+			text-decoration: underline!important;
+		}
+	}
+
+	a[aria-expanded=true]:after{
+		content:" ▲"
+	}   
+
+	a[aria-expanded=false]:after{
+		content:" ▼"
+	}
+
+	section section {
+		margin-bottom: 20px;
+		
+		@media screen and  (min-width : 541px) {
+			margin-left: 30px;
+		}  		
+	}
+
+	ol, ul {
+		margin-top: 0;
+		margin-bottom: 0px;
+		padding-left: 20px;
+		
+		@media screen and  (min-width : 541px) {
+			margin-left: 46px;
+		}  		
+		
+	}
+
+	.ital {
+		
+		xxfont-weight: 600;
+	 }
+
+
+	time {
+		float:right;
+	}
+	
+	
+  	.time {
+		xxcolor:#828282;
+	    font-style: italic;
+	    padding-bottom: 5px;
+	}
+ 
+
+}

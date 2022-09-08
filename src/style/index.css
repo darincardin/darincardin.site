@@ -1,0 +1,84 @@
+
+html, body, #app {
+	background: white;
+	color:black;
+	font-family: Calibri, Arial;
+	font-size: 17px;
+	xxfont-family: Arial;
+	xxxfont-family: Trebuchet MS;
+	height:100%;
+	overflow-x:hidden;
+	margin:0;
+}
+		
+		
+.container {
+
+	transition: all .5s;
+}
+		
+		
+		
+.animated  {
+	overflow:hidden;
+
+}	
+		
+		
+a{
+	text-decoration:underline;
+	white-space: nowrap;
+}
+
+
+main {
+	display: block;
+	position:relative;
+    min-height: calc(100% - 230px);
+	margin-right: 100px;
+	transition: all .5s;
+}	
+	
+@media only screen and (max-width: 767px) {		
+		main{ margin-right: 0px; }	
+}	
+	
+	
+a{
+	cursor:pointer;	
+}
+	
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin: 5px 0;
+}	
+
+h3{
+    font-weight: 800;
+}
+
+h4{
+	font-size:18px;
+}
+			
+		
+ul{
+	list-style-type: disc;
+}	
+	
+img {
+	vertical-align: top;
+}
+
+hr{
+    margin: 0 0 10px 0;
+    border-top: 1px solid #d7d7d7;
+}
+
+.red {	color:red; }
+
+.panel {
+    padding: 10px 20px;
+	background:white;
+}
+
