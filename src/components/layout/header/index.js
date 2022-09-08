@@ -17,11 +17,13 @@ export default Header;
 
 	<li><SubNav /></li>		
 
+
+	<li><SubNav/></li>
 */
 
 
 
-import './style.scss';
+import ('./style.scss');
 
 
 var Header =  props => {
@@ -33,9 +35,9 @@ var Header =  props => {
 					Coding	<span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu" aria-labelledby="about-us">
-						<li><Link to="/casestudy">Case Study</Link></li>	
-						<li><Link to="/code">ReactJS</Link></li>	
-						<li><Link to="/svg">SVG</Link></li>	
+						<li><Link href="/casestudy">Case Study</Link></li>	
+						<li><Link href="/react">ReactJS</Link></li>	
+						<li><Link href="/svg">SVG</Link></li>	
 					</ul>
 			</span>			
 						
@@ -44,10 +46,11 @@ var Header =  props => {
 					<ul>
 					
 						
-						<li><Link href="/home">Home</Link></li>	
-						<li><Link href="/resume">Resume</Link></li>		
-							
-						<li><Link href="/other">Other</Link></li>	
+						<li><a href="/home">Home</a></li>	
+						<li><a href="/resume">Resume</a></li>		
+						<li><a href="/svg/rocket">xxx</a></li>		
+					
+						<li><a href="/other">Other</a></li>	
 					</ul>
 				</nav>
 				

@@ -1,0 +1,100 @@
+
+#home {
+
+	.photo {
+		float: right;
+
+		height: 168px;
+	}
+
+	.skill {
+		display: inline-block;
+		white-space: nowrap;
+		xxwidth: 175px;
+		vertical-align: top;
+
+		table {
+			thead td{ font-weight: bold;}
+			td{ padding: 0 5px;}
+			.red {	color:red; }
+		}		    
+	}
+
+	a {
+		text-decoration:underline;
+		white-space: nowrap;
+	}
+
+
+	.test-margin{
+		margin-right: 100px;
+		transition: all .5s;
+	}	
+	
+	@media only screen and (max-width: 767px) {		
+		.test-margin{ margin-right: 0px; }	
+	}		
+}
+
+
+.home-bg {
+	z-index: 10;
+    overflow: hidden;
+    position: absolute;
+    top: -110px;
+	
+    bottom: 0;
+	width: 245px;
+    right: 0;
+	filter: blur(0px);
+	transition: all .5s;
+	animation: blur 1s linear;
+	
+	div, img {
+		width: 260px;
+	}
+	
+	
+	@media only screen and (max-width: 767px) {				
+		&{ display: none;	}	
+	}	
+	
+
+}
+
+
+
+@keyframes blur {
+	0%  { filter: blur(10px); opacity:0; }
+	75% { filter: blur(10px); opacity:0; }
+	100%{ filter: blur(0px); opacity:1; }
+}	
+	
+	
+	
+xxxximg {
+		right: -15px;
+		max-height: 500px;
+		bottom: 0;	
+		height: 100%;
+		right: -15px;
+		bottom: 0;
+		position: absolute;
+		z-index: 15;
+		opacity: 1;
+		filter: blur(0px);
+		transition: all .5s;
+		animation: blur 1s linear;
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,30 +1,54 @@
 import { h } from 'preact';
-import { Router } from 'preact-router';
+import { Router, Route} from 'preact-router';
+
+//import { Routes, Router, Route } from 'react-router-dom';
 
 import Header from './layout/header';
 import Footer from './layout/footer';
 
-// Code-splitting is automated for `routes` directory
+
 import Home from '../routes/home';
-import Profile from '../routes/profile';
+import CaseStudy from '../routes/code/casestudy';
 import Resume from '../routes/resume';
+
+
 import Other from '../routes/other';
 
-const App = () => (
+
+    
+const App = () => {
+	
+	return	(
 	<div id="app">
+	
 			<Header />		
 			<main>	
+			
 				<Router>
-					<Home path="/" />
-					<Home path="/home" />
-					<Resume path="/resume"  />
-					<Other path="/other" />
-				</Router>
+					<Route path="/home"   component={Home} />
+					<Route path="/casestudy" component={CaseStudy} />
+					<Route path="/resume" component={Resume} />
+		
+				
+					<Route path="/other"  component={Other} />
+									
+									
+					
+				</Router>		
+	   
+			
 			</main>								
 			<Footer />	
-	
-
 	</div>
-)
+)}
+
 
 export default App;
+
+/*
+
+
+
+*/
+
+

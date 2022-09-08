@@ -1,5 +1,3 @@
-import React from "react";
-import ReactDOM from 'react-dom';
 
 
 
@@ -12,7 +10,7 @@ var Rocket = props => {
 	
 	
 	
-	
+	xxx
 	
 			<img  src="../images/svg/rocket.svg" />
 	
