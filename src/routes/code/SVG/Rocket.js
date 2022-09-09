@@ -8,9 +8,7 @@ var Rocket = props => {
 		<div class="rocket" >
 		
 	
-	
-	
-	xxx
+
 	
 			<img  src="../images/svg/rocket.svg" />
 	

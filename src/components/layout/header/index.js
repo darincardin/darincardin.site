@@ -1,27 +1,6 @@
 import { h } from 'preact';
-import { Link } from 'preact-router/match';
-//import style from './style.scss';
-/*
-const Header = () => (
-	<header class={style.header}>
-		<h1>Preact App</h1>
-		<nav>
-			<Link activeClassName={style.active} href="/">Home</Link>
-			<Link activeClassName={style.active} href="/profile">Me</Link>
-			<Link activeClassName={style.active} href="/profile/john">John</Link>
-		</nav>
-	</header>
-);
 
-export default Header;
-
-	<li><SubNav /></li>		
-
-
-	<li><SubNav/></li>
-*/
-
-
+import { NavLink } from "react-router-dom";
 
 import ('./style.scss');
 
@@ -35,9 +14,9 @@ var Header =  props => {
 					Coding	<span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu" aria-labelledby="about-us">
-						<li><Link href="/casestudy">Case Study</Link></li>	
-						<li><Link href="/react">ReactJS</Link></li>	
-						<li><Link href="/svg">SVG</Link></li>	
+						<li><NavLink to="/casestudy">Case Study</NavLink></li>	
+						<li><NavLink to="/react">ReactJS</NavLink></li>	
+						<li><NavLink to="/svg">SVG</NavLink></li>	
 					</ul>
 			</span>			
 						
@@ -45,12 +24,10 @@ var Header =  props => {
 				<nav>
 					<ul>
 					
-						
-						<li><a href="/home">Home</a></li>	
-						<li><a href="/resume">Resume</a></li>		
-						<li><a href="/svg/rocket">xxx</a></li>		
-					
-						<li><a href="/other">Other</a></li>	
+						<li><NavLink to="/home">Home</NavLink></li>	
+						<li><NavLink to="/resume">Resume</NavLink></li>		
+						<li><SubNav /></li>					
+						<li><NavLink to="/other">Other</NavLink></li>	
 					</ul>
 				</nav>
 				
