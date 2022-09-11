@@ -1,5 +1,5 @@
 import {Component} from "preact";
-
+import { createRef } from 'preact'
 import './style.scss'
 
 class AsyncImage extends Component{
@@ -7,17 +7,17 @@ class AsyncImage extends Component{
 
 		constructor(props){
 			super(props)
-			//this.elem = React.createRef();
+			this.elem = createRef();
 		}
 	
-		xxcomponentDidMount(){
+		componentDidMount(){
 			var img = new Image();
 			img.src = this.props.file;
 			
 			var elem = this.elem.current;
 			
 			img.onload = function(){
-				$(elem).find('.picture').addClass('show')[0].src = this.src;
+				$(elem).find('.picture').addClass('shofw')[0].src = this.src;
 				$(elem).find('.spinner').remove();
 			}
 		}

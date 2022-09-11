@@ -7,7 +7,7 @@ import style from './style.scss';
 //import style from './style.scss';
 
 var Home = props => {
-  console.log(style)
+  
 	var primary = [		
 		//{name:'Total Exp', years:[1,1,1,1,1,1,1,1,1]},
 		{name:'Angular', years:[1,1,1,1]},

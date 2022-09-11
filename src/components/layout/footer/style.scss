@@ -1,28 +1,21 @@
 
 
 	
-footer {
-	z-index: 10000;
-	background: white;
-	xxbackground:black;
-	overflow:hidden;
-    display: block;
-    color: black;
-    padding: 5px 5px 0 5px;
-	height: 25px;
-	text-align:center;
-    margin-top: 10pxx;
-    border-top: solid #d8d8d8 1px;
+	footer{
+		z-index: 10000;
+		background: white;
 	
-	.copy {
+		overflow:hidden;
+	    display: block;
+	    color: black;
+	    padding: 5px 5px 0 5px;
+		height: 35px;
 		text-align:center;
-		font-weight: 500;
-	
-	   .brand {
-			padding-top: 5px;
-			font-size: 16px;
-		}
+	    margin-top: 10pxx;
+	    border-top: solid #d8d8d8 1px;
 	}
+	
+
 	
 	
 	address {
@@ -44,6 +37,5 @@ footer {
 			
 			a:nth-child(1){ left: 0px;}
 			a:nth-child(2){	left: 32px;	}			
-			a:nth-child(3){left: 70px;}					
+			a:nth-child(3){ left: 70px;}					
 	}	
-}

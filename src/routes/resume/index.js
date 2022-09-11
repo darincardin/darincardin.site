@@ -1,5 +1,5 @@
 
-import './styles.scss';
+import style from './styles.scss';
 
 	var Skills = () =>(
 		<section className="skills">
@@ -35,10 +35,8 @@ import './styles.scss';
 		return (
 
 			<section>		
-				<a data-toggle="collapse" data-target={"#item" + count} aria-expanded="false">{props.name}</a>
+				<a  className="expand" data-toggle="collapse" data-target={"#item" + count} aria-expanded="false">{props.name}</a>
 
-			
-			
 				<div id={"item" + count++} className="collapse">
 						
 						<div className="ital"><i>     <b>{props.title}</b></i>     </div>
@@ -68,7 +66,7 @@ import './styles.scss';
 				<a href="https://www.linkedin.com/in/darin-cardin-23545079" target="_blank" >https://www.linkedin.com </a> 
 			</div> 			
 	
-			<br />
+
 		</section>							
 	)
 

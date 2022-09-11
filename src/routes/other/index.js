@@ -2,6 +2,9 @@ import {Component} from "preact";
 
 import GalleryImg from './GalleryImg.jsx'
 
+import 'jquery.touch/jquery.touch.js'
+
+
 //import '/js/touchTouch.jquery.js';
 //import '/css/touchTouch.css';
 //import './styles.scss';
@@ -13,7 +16,10 @@ class Other extends Component {
 	           'lizard','moon','pink1','pink3','rabbit','red1','rocks','sea','stork','street',
 	           'suncactus','sunset', 'yucca'];
 
-	componentDidMount(){		
+	componentDidMount(){	
+		
+		
+			$('.gallery a.gal_item').touch();
 		//$('#gallerySlider').empty();	
 		//$('.gallery a.gal_item').touchTouch();
 	}

@@ -11,6 +11,16 @@ html, body, #app {
 	margin:0;
 }
 		
+.async-image{
+	display:inline-block;
+}		
+		
+.picture {
+	margin:1px;
+	width:150px;
+	display:inline-block!important;
+}		
+		
 		
 .container {
 
@@ -81,4 +91,47 @@ hr{
     padding: 10px 20px;
 	background:white;
 }
+
+	nav.subnav {
+		background-color: transparent; 
+     	border: transparent;
+     	border-bottom: #000000 solid 1px;
+     	border-radius:0;
+	
+	}
+
+
+	nav.subnav a {
+		border-top: transparent 6px solid;
+		font-size: 20px;
+		color:#282828;
+		font-weight: 500;
+		transition: all .4s;
+	}
+	
+	nav.subnav a:hover, nav.subnav a.active{
+		color:black!important;
+	}
+
+	nav.subnav a.active{
+		border-top: black 6px solid;
+	}	
+	
+					
+	.expand[aria-expanded] {
+		font-size: 18px;
+		font-weight: 400;
+		color: black;
+		user-select: none;
+	}
+
+	.expand[aria-expanded=true]:after{
+		content:" ▲"
+	}   
+
+	.expand[aria-expanded=false]:after{
+		content:" ▼"
+	}
+
+
 

@@ -5,9 +5,9 @@ import Footer from './layout/footer';
 
 import Home from '../routes/home';
 import Resume from '../routes/resume';
-import SVG from '../routes/code/SVG';
-import React from '../routes/code/react';
-import CaseStudy from '../routes/code/casestudy';
+import SVG from '../routes/SVG';
+import React from '../routes/react';
+import CaseStudy from '../routes/casestudy';
 import Other from '../routes/other';
 
 

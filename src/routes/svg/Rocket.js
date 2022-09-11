@@ -1,11 +1,11 @@
 
-
+import style from './styles.scss';
 
 var Rocket = props => {
 
 	return (
 		
-		<div class="rocket" >
+		<div className={style.rocket} >
 		
 	
 

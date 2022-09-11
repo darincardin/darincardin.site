@@ -2,7 +2,10 @@ import {BrowserRouter as Router, Redirect, Switch, Route, Link, withRouter} from
 import { NavLink } from "react-router-dom";
 
 
-import './styles.scss';
+import ('./styles.scss');
+import style from './styles.scss';
+
+import Nav from './navigation.js'
 
 import Rocket from './Rocket.js'
 import Cursive from './Cursive.js'
@@ -12,32 +15,18 @@ var Home = props => {
 
 
 
-	var Navigation = props =>{
-		     
-		return (
-		
-			<nav className="navbar navbar-default">
-				<ul className="nav navbar-nav">					
-					<li><NavLink to="/svg/rocket">Rocket</NavLink></li>
-					<li><NavLink to="/svg/cursive">Cursive</NavLink></li>		
-					<li><NavLink to="/svg/tropic">Tropic</NavLink></li>							
-				</ul>	
-			</nav>			
-		
-		)
-		
-	}
+
 
 
 	return (
-		<>
+		
 			<div  className="animated fadeIn svg" >
 				<div  className="container">
 					<div className="row">
 						<div className="col-xs-12 ">
 
-								<Navigation />
-								<div class="svg">
+								<Nav />
+								<div className={style.svg}>
 								
 					
 									
@@ -53,7 +42,7 @@ var Home = props => {
 					</div>	
 				</div>
 			</div>
-		</>
+		
 	);
 }
 
