@@ -7,7 +7,7 @@ import Nav from './navigation.js'
 
 import StrategyList from './strategy'
 
-import style from './styles.scss';
+//import style from './styles.scss';
 
 
 var Code = () => {

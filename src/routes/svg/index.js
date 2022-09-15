@@ -2,8 +2,8 @@ import {BrowserRouter as Router, Redirect, Switch, Route, Link, withRouter} from
 import { NavLink } from "react-router-dom";
 
 
-import ('./styles.scss');
-import style from './styles.scss';
+//import ('./styles.scss');
+//import style from './styles.scss';
 
 import Nav from './navigation.js'
 

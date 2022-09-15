@@ -1,38 +1,14 @@
-import { h } from 'preact';
 
-import { NavLink } from "react-router-dom";
 
-import ('./style.scss');
+import  Navigation  from "./navigation";
+
+
+
+import './style.css';
 
 
 var Header =  props => {
 	
-
-		var SubNav = () =>
-			<span class="dropdown">
-				<a class="dropdown-toggle" type="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Coding	<span class="caret"></span>
-				</a>
-					<ul class="dropdown-menu" aria-labelledby="about-us">
-						<li><NavLink to="/casestudy">Case Study</NavLink></li>	
-						<li><NavLink to="/react">ReactJS</NavLink></li>	
-						<li><NavLink to="/svg">SVG</NavLink></li>	
-					</ul>
-			</span>			
-						
-		var Navigation = ()=>	
-				<nav>
-					<ul>
-					
-						<li><NavLink to="/home">Home</NavLink></li>	
-						<li><NavLink to="/resume">Resume</NavLink></li>		
-						<li><SubNav /></li>					
-						<li><NavLink to="/other">Other</NavLink></li>	
-					</ul>
-				</nav>
-				
-
-			
 
 		return (
 			<header>

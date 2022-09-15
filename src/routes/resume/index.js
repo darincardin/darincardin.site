@@ -1,5 +1,5 @@
 
-import style from './styles.scss';
+//import style from './styles.scss';
 
 	var Skills = () =>(
 		<section className="skills">

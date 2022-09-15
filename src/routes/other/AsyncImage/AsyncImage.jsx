@@ -1,6 +1,6 @@
 import {Component} from "preact";
 import { createRef } from 'preact'
-import './style.scss'
+//import './style.scss'
 
 class AsyncImage extends Component{
 

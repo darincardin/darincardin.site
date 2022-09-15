@@ -2,7 +2,7 @@ import {Component} from "preact";
 
 import GalleryImg from './GalleryImg.jsx'
 
-import 'jquery.touch/jquery.touch.js'
+//import 'jquery.touch/jquery.touch.js'
 
 
 //import '/js/touchTouch.jquery.js';
@@ -19,7 +19,7 @@ class Other extends Component {
 	componentDidMount(){	
 		
 		
-			$('.gallery a.gal_item').touch();
+		//	$('.gallery a.gal_item').touch();
 		//$('#gallerySlider').empty();	
 		//$('.gallery a.gal_item').touchTouch();
 	}
