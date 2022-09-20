@@ -26,7 +26,7 @@ var Home = props => {
 						<div className="col-xs-12 ">
 
 								<Nav />
-								<div className={style.svg}>
+								<div >
 								
 					
 									

@@ -9,6 +9,8 @@ import StrategyList from './strategy'
 
 //import style from './styles.scss';
 
+import $ from 'jquery';
+
 
 var Code = () => {
 
@@ -51,15 +53,15 @@ var Code = () => {
 				<BrowserRouter>	
 					<div  className="container">
 						<div className="row">
-							<div className="samples" >
+							
 								<div className=" col-xs-12 col-sm-6" >
 									<Nav />
 									<div className="description" ><Description /></div>
 								</div>
-								<div className={'col-xs-12 col-sm-6 ' + style.example}>
+								<div className={'col-xs-12 col-sm-6 ' }>
 									<Example />
 								</div>
-							</div>			
+										
 						</div>
 					</div>	
 				</BrowserRouter>	

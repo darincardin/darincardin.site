@@ -1,0 +1,13 @@
+
+
+
+.nav.secondary-nav {
+	
+	border-bottom: solid #c6c6c6 1px;
+    margin-bottom: 20px;
+}
+				
+.nav.secondary-nav	.nav-item a {
+	padding-right:10px;
+	text-decoration: none;
+}	

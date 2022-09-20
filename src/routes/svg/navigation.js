@@ -1,21 +1,25 @@
 import React from "react";
 
+import Nav from 'react-bootstrap/Nav';
+
 import {NavLink} from 'react-router-dom';
 
 
-//import  './styles.scss';
+
 
 var Navigation = props =>{
 	
 	return (
 	
-			<nav className="navbar subnav navbar-default">
-				<ul className="nav navbar-nav">					
-					<li><NavLink to="/svg/rocket">Rocket</NavLink></li>
-					<li><NavLink to="/svg/cursive">Cursive</NavLink></li>		
-					<li><NavLink to="/svg/tropic">Tropic</NavLink></li>							
-				</ul>	
-			</nav>					
+	    <Nav className="secondary-nav">
+	      <Nav.Item><NavLink to="/svg/cursive">Cursive</NavLink></Nav.Item>
+		  <Nav.Item><NavLink to="/svg/rocket">Rocket</NavLink></Nav.Item>
+		  <Nav.Item><NavLink to="/svg/tropic">Tropic</NavLink></Nav.Item>   
+        </Nav>
+	
+	
+	
+			
 	)	
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 //import './style.css?raw';
 
-//import style from './style.scss';
+import style from './style.css';
 
 //import style from './style.scss';
 

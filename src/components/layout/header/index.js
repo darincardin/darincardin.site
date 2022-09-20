@@ -1,10 +1,9 @@
 
-
 import  Navigation  from "./navigation";
 
 
 
-import './style.css';
+import './style.scss';
 
 
 var Header =  props => {
@@ -12,6 +11,8 @@ var Header =  props => {
 
 		return (
 			<header>
+
+			
 				<div name="main">
 				
 					<Navigation />

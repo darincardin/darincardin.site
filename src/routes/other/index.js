@@ -45,8 +45,8 @@ class Other extends Component {
 									<h3>Photography</h3>
 									<hr />									
 									<p>
-										I started doing photography in 2019. I sell my photos on 
-										<a target="_blank" className="lnk" href="https://www.shutterstock.com/g/Darin+Jay+Cardin"> Shutter Stock</a>.
+										I started doing photography in 2019. I sell my photos 
+										on <a target="_blank" className="lnk" href="https://www.shutterstock.com/g/Darin+Jay+Cardin"> Shutter Stock</a>.
 										Here are some samples of my work.
 									</p>
 									<div className="gallery gall__1">

@@ -1,7 +1,12 @@
 
 
 
-/*
+header .nav-link {
+	padding:0;
+	
+}
+
+
 header {   
 	background: black;
     color: rgb(255, 255, 255);
@@ -53,7 +58,44 @@ header {
 
 	
 
+
+	article{	
+		margin: 0  175px 0 230px;
+		z-index: 2;
+		color: white;
+		
+		@media only screen and (max-width: 767px) {
+			margin: 0 20px;
+			line-height: 20px;
+		}
+		
+		h4{
+			margin: 0px;
+			font-size: 40px;
+			font-weight: 400;
+			text-shadow: 0px 2px 3px #000000;
+		}
+				
+		div.sub {
+			font-weight: 600;
+			font-size: 15px;	
+			bottom: 0;
+			padding-bottom: 5px;
+			font-size: 17px;
+			display:block;
+			text-shadow: 1px 1px 2px  #0a0101;
 			
+			@media only screen and (max-width: 767px) {
+				padding-bottom: 0px;
+			}				
+		}
+
+	}
+
+}
+
+
+		
 	nav {
 		text-align: right;
 		z-index: 5;
@@ -100,39 +142,3 @@ header {
 		}			
 	}
 
-
-	article{	
-		margin: 0  175px 0 230px;
-		z-index: 2;
-		color: white;
-		
-		@media only screen and (max-width: 767px) {
-			margin: 0 20px;
-			line-height: 20px;
-		}
-		
-		h4{
-			margin: 0px;
-			font-size: 40px;
-			font-weight: 400;
-			text-shadow: 0px 2px 3px #000000;
-		}
-				
-		div.sub {
-			font-weight: 600;
-			font-size: 15px;	
-			bottom: 0;
-			padding-bottom: 5px;
-			font-size: 17px;
-			display:block;
-			text-shadow: 1px 1px 2px  #0a0101;
-			
-			@media only screen and (max-width: 767px) {
-				padding-bottom: 0px;
-			}				
-		}
-
-	}
-
-}
-*/
