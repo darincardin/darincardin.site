@@ -15,10 +15,29 @@ header ul{
 }
 
 
+header article img{
+    margin-top: 30px;
+    width: auto;
+}
+
+
+header ul ul {
+	background: black;
+    top: 25px;
+    position: absolute;	
+	li{
+		display:block;
+		    width: 100%;
+
+	}
+}
 
 
 
-
+.dropdown-menu {
+	
+	width: 480px;
+}
 
 .dropdown-menu, .dropdown a:hover {
 	background: black!important;

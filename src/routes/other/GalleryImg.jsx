@@ -12,7 +12,7 @@ var GalleryImg = props =>{
 
 
 		return (
-			    <a href={path.normal} className="gal_item" >
+			    <a href={path.normal} className="gal_item" target="_blank">
 					<AsyncImage file={path.small}/>
             	</a>
 		)

@@ -1,3 +1,6 @@
+dropdown-menu.show{
+	display:block;
+}
 
 
 
@@ -6,8 +9,18 @@
 	border-bottom: solid #c6c6c6 1px;
     margin-bottom: 20px;
 }
+	
+.nav.secondary-nav	.nav-item {
+	padding-right:10px;
+	margin-top:10px;
+}	
 				
 .nav.secondary-nav	.nav-item a {
-	padding-right:10px;
+	
 	text-decoration: none;
-}	
+	border-top: 4px solid white;
+}
+
+.nav.secondary-nav	.nav-item a.active {
+	border-top: 4px solid black;
+}		

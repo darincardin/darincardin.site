@@ -136,4 +136,11 @@ hr{
 	}
 
 
-
+	.glyphicon-stop {
+		margin: 0 1px;
+    	background: red;
+	    width: 10px;
+	    height: 10px;
+	    height: 10px;
+	    display: inline-block;
+	}

@@ -1,9 +1,22 @@
-
+import Accordion from 'react-bootstrap/Accordion';
 //import style from './styles.scss';
 
 	var Skills = () =>(
 		<section className="skills">
 			<h3>Skills</h3> 
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			<ul>										
 				<li className="ital">React 16, Angular 10, AngularJS, JQuery, AJAX, JavaScript, TypeScript, Jest</li>
 				<li className="ital">Java, Spring Boot, MySQL, Docker</li>
@@ -29,22 +42,32 @@
 		</section>								
 	)
 
-	var count = 1;
 	var Experience = props => {
 		
 		return (
 
-			<section>		
-				<a  className="expand" data-toggle="collapse" data-target={"#item" + count} aria-expanded="false">{props.name}</a>
-
-				<div id={"item" + count++} className="collapse">
-						
-						<div className="ital"><i>     <b>{props.title}</b></i>     </div>
-					<div>{props.children}</div>
-				</div>	
+			<section>
+			    <Accordion >
+			      <Accordion.Item eventKey="0">
+			        <Accordion.Header>{props.name}</Accordion.Header>
+			        <Accordion.Body>
+						{props.children}
+			        </Accordion.Body>
+			      </Accordion.Item>		
+			     </Accordion> 
 			</section>	
 		)
 	}
+
+
+			
+
+			
+
+
+
+
+
 
 
 	var Download = ()=> (

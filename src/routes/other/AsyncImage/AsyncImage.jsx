@@ -19,7 +19,6 @@ class AsyncImage extends Component{
 			var elem = this.elem.current;
 			
 			img.onload = function(){
-				debugger;
 				$(elem).find('.picture').addClass('show')[0].src = this.src;
 				$(elem).find('div:first-child').remove();
 			}

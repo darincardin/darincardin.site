@@ -36,7 +36,7 @@ class Tooltip extends Component {
 	}
 
 	render = () =>  {
-		debugger
+		
 		var classes = "errorTooltip " + (this.props.msg?"show":""); 
 		
 	

@@ -39,8 +39,6 @@ class Input extends React.Component {
 
 	onBlur = e =>{
 		
-		debugger;
-		//this.tooltipFunc()
 		var value = e.target.value;
 
 		if(this.props.format){
