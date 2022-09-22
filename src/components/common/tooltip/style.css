@@ -1,0 +1,14 @@
+
+
+.errorTooltip{
+	
+	padding: 2px 5px;
+    margin-left: 5px;
+    box-shadow: 3px 2px 4px #00000054;
+    border: solid #989898 1px;
+    background: white;
+    border-radius: 6px;
+    color: red;
+    position: absolute;	
+}
+

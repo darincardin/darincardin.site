@@ -1,8 +1,9 @@
 
-import $ from 'jquery'
+
 
 var Tooltip = function(elem, loaderContext)  {
-
+	
+	/*
          var input = $(elem).find('.form-control');
 
          var placement = window.innerWidth > 540 ? 'right' : 'top';
@@ -13,19 +14,21 @@ var Tooltip = function(elem, loaderContext)  {
            if (val === undefined) return input.data('bs.popover').options.content;
            input.data('bs.popover').options.content = val;
          }
-
+*/
          return {
             show: function(data) {
 				
                if (data != value()) {
-                  value(data);
-                  input.popover('show');
+               //   value(data);
+                //  input.popover('show');
                }
             },
             hide: function() {
-               value("");
-               input.popover('hide');
-            }
+            //   value("");
+             //  input.popover('hide');
+            },
+            
+            
          }
 };
 

@@ -3,6 +3,9 @@ import './style';
 import './style/header.scss';
 import './style/navigation.css';
 
+import './style/validation.scss';
+import './style/tooltip.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //export default {}

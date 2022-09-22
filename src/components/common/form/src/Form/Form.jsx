@@ -1,12 +1,7 @@
-
+import React from 'react';
 
 import InputFactory from './Inputs/InputFactory.jsx'
 import Validation from './Tools/Validation.js';
-import React, { useState, useRef } from 'react';
-import Button from 'react-bootstrap/Button';
-import Overlay from 'react-bootstrap/Overlay';
-
-
 
 import './style.scss';
 import './validation.scss';
@@ -122,7 +117,6 @@ class Form extends React.Component {
 	render() {
 
 		return (
-			    <>
 			<form onSubmit={this.onSubmit}>
 				<table>
 					<tbody>
@@ -133,16 +127,6 @@ class Form extends React.Component {
 				</table>
 				<div className="text-right">{this.props.children}</div>
 			</form>	
-			
-			
-			
-			
-	
-      
-      
-      
-    </>
-			
 		)
 	}
 }

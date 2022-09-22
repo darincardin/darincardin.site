@@ -1,24 +1,28 @@
 import React from 'react';
 //import tooltip from '../Tools/Tooltip.jsx';
+import Tooltip from '../Tools/tooltip/index.js';
 import Validation  from '../Tools/Validation.js';
 
-const messages = {required:"Required", phone:"Format is xxx-xxx-xxxx", containsChars:"Cannot contain characters"};
+
 
 class Input extends React.Component { 
 
 	constructor(props){
 		super(props)
 		this.elem = React.createRef();
-		this.state = {value: this.props.value}
+		this.state = {value: this.props.value, show: false}
 	}
+	
+	a = null
 	
 	validate(value = this.state.value){
 		return this.props.strategy.validate(this.props.required, value )
 	}
 	
 	componentDidMount() {
-	   // this.ttip = tooltip(this.elem.current);
-		//this.tooltipParams = { onKeyUp:this.onWatch, onFocus:this.onWatch	}
+	  //  this.ttip = tooltip(this.elem.current);
+	  	/////////********************************** */
+		this.tooltipParams = { onKeyUp:this.onWatch, onFocus:this.onWatch	}
 	}
 	
 	componentWillReceiveProps(props) {
@@ -34,7 +38,9 @@ class Input extends React.Component {
 	}
 
 	onBlur = e =>{
-
+		
+		debugger;
+		//this.tooltipFunc()
 		var value = e.target.value;
 
 		if(this.props.format){
@@ -51,7 +57,12 @@ class Input extends React.Component {
 
 	onWatch = () =>{
 		var error = this.props.error;	
-		if(this.props.submitted) error ? this.ttip.show(messages[error]) : this.ttip.hide();
+		//if(this.props.submitted) error ? this.ttip.show(messages[error]) : this.ttip.hide();
+		
+		
+		//if(this.props.submitted)  this.setState({show:error?true:false}) 
+		
+		/////////********************************** */
 	}
 
 	render(){ 
@@ -74,8 +85,11 @@ class Input extends React.Component {
 				<td>
 					<div ref={this.elem} className={className.join(" ")} name={`my-${this.props.name}`}  >							
 						{ this.props.strategy.html(attribs, this.tooltipParams, this.props.options) }
-						<span className="glyphicon glyphicon-ok form-control-feedback" ></span>
-						<span className="glyphicon glyphicon-remove form-control-feedback" ></span>
+				
+						<span className="tooltipAnchor">
+							<Tooltip  elem={this.elem}  msg={this.props.submitted&&this.props.error} />
+						</span>
+						
 					</div>						
 				</td>
 			</>

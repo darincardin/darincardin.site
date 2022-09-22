@@ -12,7 +12,7 @@ class Header extends React.Component  {
 	render(){
 		return (<td colSpan="2">
 					<div className="header">
-						<hr /><span>{this.props.label}</span><hr /> 
+						<br/><span><b>{this.props.label}</b></span><hr /> 
 					</div>
 				</td>)
 	}
