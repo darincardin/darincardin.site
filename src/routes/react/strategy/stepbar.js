@@ -29,8 +29,16 @@ class Widget extends Component{
 			<br />
 			<button onClick={this.change} className="btn btn-primary">Next Step</button>
 		</div>
+
 	)
 }
+
+/*
+
+	
+*/
+
+
 
 export default {
 	widget: Widget,
