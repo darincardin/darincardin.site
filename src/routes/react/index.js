@@ -2,8 +2,8 @@ import React, { Suspense } from 'react';
 import Nav from './navigation.js'
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+import SyntaxLoader from '../../components/common/syntaxloader'
 
 
 import StrategyList from './strategy'
@@ -35,9 +35,8 @@ var Code = () => {
 														<div className="row">
 															<div className='col-xs-12 col-sm-6'>
 																<div dangerouslySetInnerHTML={{ __html: w.text }} />
-								
-																<SyntaxHighlighter language="javascript" style={docco}>{w.code}</SyntaxHighlighter>
-																
+																	<SyntaxLoader code={w.code}/>								
+
 																<a target="_blank" href={w.url} >GitHub</a>		
 															</div>	
 																
