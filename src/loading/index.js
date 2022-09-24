@@ -16,7 +16,7 @@ export default 	(
 
 
 export default 	(<div className="loader">
-					<img  src="/images/preloader.gif" />
+					<img  src="/assets/preloader.gif" />
 				</div>	)
 
 

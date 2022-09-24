@@ -5,15 +5,18 @@
 	.photo{
 		float: right;
 		width: 280px;
+        padding: 5px;
 
+	}
+	
+	
 		@media only screen and (max-width: 600px) {		
-			&{ width: 200px;}	
+			.photo{ width: 200px;}	
 		}
 
 		@media only screen and (max-width: 499px) {		
-			&{ width: 120px;}	
+			.photo{ width: 120px;}	
 		}
-	}
 	
 	.skill {
 		display: inline-block;

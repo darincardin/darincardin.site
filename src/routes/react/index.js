@@ -35,7 +35,7 @@ var Code = () => {
 														<div className="row">
 															<div className='col-xs-12 col-sm-6'>
 																<div dangerouslySetInnerHTML={{ __html: w.text }} />
-																	<SyntaxLoader code={w.code}/>								
+																<SyntaxLoader code={w.code}/>								
 
 																<a target="_blank" href={w.url} >GitHub</a>		
 															</div>	
@@ -47,7 +47,7 @@ var Code = () => {
 													</Route>
 												))}
 												
-												<Redirect from="/react" to="/react/step" />	
+												<Redirect from="/react" to="/react/form" />	
 											</Switch>	
 									</Suspense>											
 									

@@ -6,8 +6,8 @@ import AsyncImage from './AsyncImage/AsyncImage.jsx'
 var GalleryImg = props =>{
 	
 		var path = {
-			small:  `/images/photos/small/${props.file}.jpg`,
-			normal: `/images/photos/normal/${props.file}.jpg`
+			small:  `/assets/photos/small/${props.file}.jpg`,
+			normal: `/assets/photos/normal/${props.file}.jpg`
 		}
 
 

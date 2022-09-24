@@ -13,7 +13,7 @@ var Cursive = props => {
 	
 	
 	
-			<img src="../images/svg/partouche.svg" />
+			<img src="../assets/svg/partouche.svg" />
 	
 	
 	

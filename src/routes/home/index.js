@@ -54,7 +54,7 @@ var Home = props => {
 							<h3>About Me</h3>
 							<hr />	
 			
-							<img name="photo" className={style.photo} src="images/home/me1.JPG" ></img>
+							<img name="photo" className={style.photo} src="assets/me1.JPG" ></img>
 							
 							<p> 
 								I've been a software engineer for nine years. I've worked at companies of all sizes, including Microsoft, Alitsource, and 
@@ -93,12 +93,3 @@ var Home = props => {
 
 
 export default Home;
-
-/*
-			<div className="home-bg animated fadeIn"  >
-				<LazyLoad >
-					<img src="images/dc2.png"  />
-				</LazyLoad>
-			</div>
-*/
-	

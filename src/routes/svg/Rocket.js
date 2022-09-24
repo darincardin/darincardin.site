@@ -10,7 +10,7 @@ var Rocket = props => {
 	
 
 	
-			<img  src="../images/svg/rocket.svg" />
+			<img  src="../assets/svg/rocket.svg" />
 	
 	
 	

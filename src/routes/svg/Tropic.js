@@ -13,7 +13,7 @@ var Tropic = props => {
 	
 	
 	
-			<img src="../images/svg/tropic.svg" />
+			<img src="../assets/svg/tropic.svg" />
 	
 	
 	

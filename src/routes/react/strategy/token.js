@@ -1,6 +1,6 @@
 import { Component } from 'preact';
-import Tokenizer from 'tokenizer/src/Tokenizer/Tokenizer.jsx'; 
 
+import Tokenizer from '../../../components/common/tokenizer/src/Tokenizer/Tokenizer.jsx'; 
 
 
 

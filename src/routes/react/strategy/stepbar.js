@@ -1,6 +1,6 @@
 import { Component } from 'preact';
 
-import Stepbar from 'stepbar/src/StepBar/StepBar.jsx'; 
+import StepBar from '../../../components/common/stepbar/src/StepBar/StepBar.jsx'; 
 
 								
 
@@ -25,7 +25,7 @@ class Widget extends Component{
 	
 	render = () => (
 		<div style={{width:'300px', position: 'relative', zIndex:'5',borderRadius: '5px', padding: '20px', background: 'white', margin:'20px auto'}}>
-			<Stepbar index={this.state.step} array={this.array} />
+			<StepBar index={this.state.step} array={this.array} />
 			<br />
 			<button onClick={this.change} className="btn btn-primary">Next Step</button>
 		</div>
