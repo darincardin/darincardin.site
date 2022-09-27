@@ -1,5 +1,5 @@
 
-import  Navigation  from "./navigation";
+import  Navigation  from "./navigation.js";
 
 
 

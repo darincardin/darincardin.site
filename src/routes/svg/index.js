@@ -1,22 +1,14 @@
-import {BrowserRouter as Router, Redirect, Switch, Route, Link, withRouter} from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import React, { Suspense } from 'react';
+import { Redirect, Switch, Route} from "react-router-dom";
 
-//import ('./styles.scss');
-//import style from './styles.scss';
+import React, { Suspense } from 'react';
 
 import Loading from '../../loading'
 
 import Nav from './navigation.js'
 
-import Rocket from './Rocket.js'
-import Cursive from './Cursive.js'
-import Tropic from './Tropic.js'
-
-var Home = props => {
 
 
-
+var SVG = props => {
 
 	return (
 		
@@ -24,23 +16,33 @@ var Home = props => {
 				<div  className="container">
 					<div className="row">
 						<div className="col-xs-12 ">
-
-								<Nav />
-								<div >
-								
+							<Nav />
+						</div>
+					</div>
 					
-									<Suspense fallback={Loading}>
-									<Switch>
-										<Route path="/svg/rocket"  component={Rocket} />
-										<Route path="/svg/cursive"  component={Cursive} />
-										<Route path="/svg/tropic" component={Tropic} />	
-										<Redirect from="/svg" to="/svg/rocket" />	
-									</Switch>
-									</Suspense>	
-								</div>
-						</div>	
-						
+					<div className="row">
+						<div className="col-xs-12 ">					
+							<Suspense fallback={Loading}>
+								<Switch>
+									<Route path="/svg/rocket" >
+										<img  src="../assets/svg/rocket.svg" />
+									</Route>
+										
+									<Route path="/svg/cursive" >
+										<img  src="../assets/svg/partouche.svg" />
+									</Route>
+										
+									<Route path="/svg/tropic" >	
+										<img  src="../assets/svg/tropic.svg" />
+									</Route>
+										
+									<Redirect from="/svg" to="/svg/rocket" />	
+								</Switch>
+							</Suspense>	
+						</div>
 					</div>	
+						
+						
 				</div>
 			</div>
 		
@@ -48,4 +50,4 @@ var Home = props => {
 }
 
 
-export default Home;
+export default SVG;

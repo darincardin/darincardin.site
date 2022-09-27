@@ -144,3 +144,8 @@ hr{
 	    height: 10px;
 	    display: inline-block;
 	}
+
+
+	.svg img {
+		width: 100%;
+	}
