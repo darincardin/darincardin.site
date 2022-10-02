@@ -29,7 +29,9 @@ class AsyncImage extends Component{
 		render() {
 			return (
 			    <div ref={this.elem} className={style.asyncImage} >
-					<div  className={style.spinner} >
+			    
+			    
+					<div  className={style.spinner} >  
 						<div />
 					</div>
 					<img className="picture" />

@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<style>
+		
+		html, body, #app{ margin:0;height:100%; }
+		
+		.loader {
+			position: relative;
+			width: 32px;
+			margin: auto;
+		}
+
+		.loader img {	
+			position: absolute;
+			bottom: -16px;
+			height: 32px;
+			width: 32px;		
+		}
+
+		</style>
 		<meta charset="utf-8">
 		<title>Darin Cardin</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,6 +28,14 @@
 		<% preact.headEnd %>
 	</head>
 	<body>
+		<div id="app" >
+			<div class="loader" style="height:50%;">
+				<img  src="assets/preloader.gif" />
+			</div>
+		</div>
+
+
+
 		<% preact.bodyEnd %>
 	</body>
 </html>

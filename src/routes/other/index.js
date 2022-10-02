@@ -12,6 +12,10 @@ import GalleryImg from './GalleryImg.jsx'
 class Other extends Component {
 
 
+
+	xxgallery = [ 'birds', 'birds', 'birds2','cat'];
+
+
 	gallery = ['bird', 'birds', 'birds2','cat','clouds','duck','gator','hawk','lily1','lily2','lily3',
 	           'lizard','moon','pink1','pink3','rabbit','red1','rocks','sea','stork','street',
 	           'suncactus','sunset', 'yucca'];

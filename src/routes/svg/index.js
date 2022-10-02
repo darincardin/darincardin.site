@@ -2,7 +2,7 @@ import { Redirect, Switch, Route} from "react-router-dom";
 
 import React, { Suspense } from 'react';
 
-import Loading from '../../loading'
+import Layout from '../../components/layout'
 
 import Nav from './navigation.js'
 
@@ -22,7 +22,7 @@ var SVG = props => {
 					
 					<div className="row">
 						<div className="col-xs-12 ">					
-							<Suspense fallback={Loading}>
+							<Suspense fallback={Layout.Loading}>
 								<Switch>
 									<Route path="/svg/rocket" >
 										<img  src="../assets/svg/rocket.svg" />

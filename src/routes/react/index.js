@@ -8,11 +8,7 @@ import SyntaxLoader from '../../components/common/syntaxloader'
 
 import StrategyList from './strategy'
 
-//import style from './styles.scss';
-
-import Loading from '../../loading'
-
-
+import Layout from '../../components/layout'
 
 var Code = () => {
 
@@ -27,7 +23,7 @@ var Code = () => {
 									<Nav/>
 								
 										
-									<Suspense fallback={Loading}>
+									<Suspense fallback={Layout.Loading}>
 											<Switch>
 												
 												{StrategyList.map(w=>(	
