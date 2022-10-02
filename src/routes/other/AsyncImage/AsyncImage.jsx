@@ -19,8 +19,9 @@ class AsyncImage extends Component{
 			var elem = this.elem.current;
 			
 			img.onload = function(){
-				$(elem).find('.picture').addClass('show')[0].src = this.src;
-				$(elem).find('div:first-child').remove();
+				$(elem).find('.picture')[0].src = this.src;
+				$(elem).find('.spinner').addClass('hide')
+			//	$(elem).find('div:first-child').remove();
 			}
 		}
 
@@ -30,11 +31,11 @@ class AsyncImage extends Component{
 			return (
 			    <div ref={this.elem} className={style.asyncImage} >
 			    
-			    
-					<div  className={style.spinner} >  
+			        <img className='picture' />
+					<div  className={style.spinner + ' spinner'} >  
 						<div />
 					</div>
-					<img className="picture" />
+					
             	</div>
 			)
 		}

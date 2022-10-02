@@ -149,3 +149,8 @@ hr{
 	.svg img {
 		width: 100%;
 	}
+	
+	
+	
+		.spinner.hide { opacity:0!important; }
+		

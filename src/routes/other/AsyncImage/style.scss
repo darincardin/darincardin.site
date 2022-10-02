@@ -1,4 +1,9 @@
   
+  .hide .spinner {
+	
+	opacity:0;
+}
+  
 .asyncImage {
 
 	height: 100%;
@@ -14,11 +19,13 @@
 	.spinner {
 		background: white;
 		display: block;
+		opacity:1;
+		transition: opacity .5s;
 		top: 0; bottom:0; left:0;right:0;
 		z-index: 1;
 		position: absolute;
 		margin: auto;
-
+		&.hide { opacity:0; }
 		
 		div {	
 			margin: 16px auto;
@@ -41,7 +48,7 @@
 		position: relative;
 		display:none;
 				
-		&.show { display:block;	}
+	
 		&:hover { opacity: 1; }		
 	}
 
