@@ -23,7 +23,7 @@ class AsyncImage extends Component{
 						this.load();
 					}
 					
-				}, 1000)							
+				}, 200)							
 		}
 
 		load = ()=>{
@@ -47,7 +47,7 @@ class AsyncImage extends Component{
 			    <div ref={this.elem} className={style.asyncImage} >	    
 			        <img className='picture' />
 					<div  className={style.spinner + ' spinner'} >  
-						<div />
+							   <div />
 					</div>
             	</div>
 			)
