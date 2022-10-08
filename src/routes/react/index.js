@@ -23,7 +23,7 @@ var Code = () => {
 									<Nav/>
 								
 										
-									<Suspense fallback={Layout.Loading}>
+									<Suspense fallback={Layout.Fallback}>
 											<Switch>
 												
 												{StrategyList.map(w=>(	

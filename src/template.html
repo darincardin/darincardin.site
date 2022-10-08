@@ -5,18 +5,32 @@
 		
 		html, body, #app{ margin:0;height:100%; }
 		
-		.loader {
-			position: relative;
-			width: 32px;
-			margin: auto;
+		.loader1 {
+			position: fixed;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			background:white;
 		}
 
-		.loader img {	
+		.loader1 img {	
 			position: absolute;
-			bottom: -16px;
+			text-align: center;    
+			top: calc(50% - 10px);
+			left: calc(50% - 10px);
 			height: 32px;
 			width: 32px;		
 		}
+		
+		
+		
+	
+		
+		
+		
+		
+		
 
 		</style>
 		<meta charset="utf-8">
@@ -29,7 +43,7 @@
 	</head>
 	<body>
 		<div id="app" >
-			<div class="loader" style="height:50%;">
+			<div class="loader1">
 				<img  src="/assets/preloader.gif" />
 			</div>
 		</div>

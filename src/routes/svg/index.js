@@ -21,8 +21,8 @@ var SVG = props => {
 					</div>
 					
 					<div className="row">
-						<div className="col-xs-12 ">					
-							<Suspense fallback={Layout.Loading}>
+						<div className="col-xs-12" >					
+							<Suspense fallback={Layout.Fallback}>
 								<Switch>
 									<Route path="/svg/rocket" >
 										<img  src="../assets/svg/rocket.svg" />

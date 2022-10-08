@@ -14,16 +14,13 @@ const SVG = React.lazy(() => import('../routes/svg'));
 const Other = React.lazy(() => import('../routes/other/'));
 
 
-const Home2 = React.lazy(() => {
-  return new Promise(resolve => setTimeout(resolve, 10000)).then(
-    () => import('../routes/home/')
-  );
-});
 
 
 
 const App = () => {
 
+	
+	
 	
 	return	(
 		<>
@@ -33,7 +30,7 @@ const App = () => {
 			<div id="app">
 				<Layout.Header />		
 				<main>	
-					<Suspense fallback={Layout.Loading}>
+					<Suspense fallback={Layout.Fallback}>
 						<Switch>
 							<Route path="/home"   component={Home} />	
 							<Route path="/resume" component={Resume} />

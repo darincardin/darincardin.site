@@ -1,3 +1,5 @@
+import {Component} from 'preact'
+
 
 import './style';
 import './style/header.scss';
@@ -12,11 +14,44 @@ import './style/loading.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
-
 import App from './components/app';
 
-export default App;
+import Layout from './components/layout';
+
+class Main extends Component {
+	
+	state = {loading:true}
+	
+	constructor(){
+		super();
+		
+		/*
+		Promise.all([
+			
+
+			import ('./style'),
+			import ('./style/header.scss'),
+			import ('./style/navigation.css')		
+		
+		]).then(()=>{
+			this.setState({loading:false})
+		})
+		
+		*/
+		this.setState({loading:false})
+	}
+
+	
+	render = ()=> {
+		return (		
+			<>
+				{ this.state.loading ? <Layout.Loading />  : <App /> }	
+			</>
+		)
+	}
+}
+
+
+
+export default Main;
 
