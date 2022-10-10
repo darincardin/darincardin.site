@@ -1,6 +1,6 @@
 import React from "react";
 
-//import './style.css?raw';
+import AsyncImage from '../../components/AsyncImage/AsyncImage.jsx'   
 
 import style from './style.css';
 
@@ -54,8 +54,9 @@ var Home = props => {
 							<h3>About Me</h3>
 							<hr />	
 			
-							<img name="photo" className={style.photo} src="assets/me1.JPG" ></img>
-							
+			
+							<AsyncImage width="300px" height="236px" className="photo" src={"assets/me1.JPG"} />
+					
 							<p> 
 								I've been a software engineer for nine years. I've worked at companies of all sizes, including Microsoft, Alitsource, and 
 								Soteria Networks.

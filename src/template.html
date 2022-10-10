@@ -5,7 +5,13 @@
 		
 		html, body, #app{ margin:0;height:100%; }
 		
+		#app{
+			position:relative;
+			z-index:1;
+		}
+		
 		.loader1 {
+			z-index:0;
 			position: fixed;
 			top:0;
 			bottom:0;
@@ -24,32 +30,33 @@
 		}
 		
 		
-		
-	
-		
-		
-		
-		
-		
 
 		</style>
 		<meta charset="utf-8">
 		<title>Darin Cardin</title>
+		<meta name="description" content="darin cardin">
+		<meta name="keywords" content="darin cardin">
+		<meta name="author" content="darin cardin">
+
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>assets/icons/apple-touch-icon.png">
 		<% preact.headEnd %>
 	</head>
+	
 	<body>
-		<div id="app" >
+	
+	
+
+	
 			<div class="loader1">
 				<img  src="/assets/preloader.gif" />
 			</div>
-		</div>
-
+		
 
 
 		<% preact.bodyEnd %>
-	</body>
+
+
 </html>

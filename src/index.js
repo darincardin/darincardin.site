@@ -11,6 +11,7 @@ import './style/tokenizer.scss';
 import './style/stepbar.scss';
 import './style/loading.css';
 
+import './style/async-image.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

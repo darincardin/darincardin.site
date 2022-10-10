@@ -1,4 +1,17 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 html, body, #app {
 	background: white;
 	color:black;
@@ -10,6 +23,12 @@ html, body, #app {
 	overflow-x:hidden;
 	margin:0;
 }
+	
+	
+		#app{
+			position:relative;
+			z-index:1;
+		}
 		
 .async-image{
 	display:inline-block;

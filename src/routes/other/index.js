@@ -1,5 +1,8 @@
 import {Component} from "preact";
 
+
+import AsyncImage from '../../components/AsyncImage/AsyncImage.jsx'  
+
 import GalleryImg from './GalleryImg.jsx'
 
 //import 'jquery.touch/jquery.touch.js'
@@ -10,10 +13,6 @@ import GalleryImg from './GalleryImg.jsx'
 //import './styles.scss';
 
 class Other extends Component {
-
-
-
-	xxgallery = [ 'birds', 'birds', 'birds2','cat'];
 
 
 	gallery = ['bird', 'birds', 'birds2','cat','clouds','duck','gator','hawk','lily1','lily2','lily3',
@@ -41,6 +40,8 @@ class Other extends Component {
 									I'm an avid hiker, and have a <a className="lnk" target="_blank"  href="https://www.youtube.com/user/darincardin" >uTube</a> channel that follows my trips to different wilderness locations across the
 									country. While on these trips, I demonstrate survival techniques that may be effective if you were ever lost.
 									The techniques range from improvised fire making to edible cacti.
+
+								    
 								</p>
 						</div>		
 					

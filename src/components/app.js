@@ -19,9 +19,6 @@ const Other = React.lazy(() => import('../routes/other/'));
 
 const App = () => {
 
-	
-	
-	
 	return	(
 		<>
 				
