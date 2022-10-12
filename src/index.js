@@ -1,19 +1,12 @@
 import {Component} from 'preact'
 
 
-import './style';
-import './style/header.scss';
-import './style/navigation.css';
-
-import './style/validation.scss';
-import './style/tooltip.css';
-import './style/tokenizer.scss';
-import './style/stepbar.scss';
-import './style/loading.css';
-
-import './style/async-image.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import $ from 'jquery';
+
 
 import App from './components/app';
 
@@ -26,20 +19,38 @@ class Main extends Component {
 	constructor(){
 		super();
 		
-		/*
-		Promise.all([
-			
-
-			import ('./style'),
-			import ('./style/header.scss'),
-			import ('./style/navigation.css')		
+		if( typeof window !== "undefined" ){
+			Promise.all([
+				import ('./style'),
+				import ('./style/header.scss'),
+				import ('./style/navigation.css'),
+				import ( './style/loading.css')		,
+				import ('bootstrap/dist/css/bootstrap.min.css')	,	
+				import ( './style/async-image.scss')
+			]).then(()=>{
+				
+				console.log($('.loader1'))
+				$('.loader1').remove();
+				
+				
+				
+				this.setState({loading:false})
+				
+				Promise.all([
+					import ( './style/validation.scss'),
+					import ( './style/tooltip.css'),
+					import ( './style/tokenizer.scss'),
+					import ( './style/stepbar.scss')
+					
+				
+					
+					
+				]).then(()=>{})	
+				
+			})
+		}
 		
-		]).then(()=>{
-			this.setState({loading:false})
-		})
-		
-		*/
-		this.setState({loading:false})
+		//this.setState({loading:false})
 	}
 
 	

@@ -3,7 +3,8 @@ import {Component, createRef} from "preact";
 import $ from 'jquery';
 
 class AsyncImage extends Component{
-
+		static max = 6
+		
 		static counter = 0;
 
 		constructor(props){
@@ -12,17 +13,26 @@ class AsyncImage extends Component{
 		}
 	  
 		componentDidMount(){
-			debugger;
+
 			this.elem.current.style.height = this.props.height;
 			this.elem.current.style.width  = this.props.width;
+		
+		
+			if(AsyncImage.counter<AsyncImage.max){ 
+				AsyncImage.counter++;
+				this.load();
+			}		
+			else {
 			
-			var x = setInterval(()=>{
-				if(AsyncImage.counter<4){ 
-					AsyncImage.counter++;
-					clearInterval(x)
-					this.load();
-				}
-			}, 200)							
+				var x = setInterval(()=>{
+					if(AsyncImage.counter<AsyncImage.max){ 
+						AsyncImage.counter++;
+						clearInterval(x)
+						this.load();
+					}
+				}, 200)				
+			
+			}		
 		}
 	
 		loaded =()=>{
@@ -43,7 +53,7 @@ class AsyncImage extends Component{
 			img.src = this.props.src;
 			
 			img.onload = function(){
-				
+								
 				$(_this.elem.current).find('img')[0].src = this.src;
 				
 				if(!_this.props.height) _this.elem.current.style.height = this.height + "px";
@@ -58,8 +68,7 @@ class AsyncImage extends Component{
 		render() {
 			return (
 			    <div ref={this.elem} className={this.props.className + ' async-image'}  >	        
-					<div  className='spinner'><div /></div>
-					
+					<div  className='spinner'><div /></div>	
 					{  this.props.href && <a href={this.props.href} target="_blank"><img /></a> }
 					{ !this.props.href && <img /> }				 
             	</div>
