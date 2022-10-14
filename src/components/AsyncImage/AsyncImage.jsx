@@ -2,69 +2,70 @@ import {Component, createRef} from "preact";
 
 import $ from 'jquery';
 
-class AsyncImage extends Component{
-		static max = 6
+
+
+class Singleton {
+	
+	static queue = [];			
+	static workers = 0;
+	
+	static async add(obj){
+			debugger
+		Singleton.queue.push(obj);
+
+		if(Singleton.workers < 4){ 
+			Singleton.workers++;
+			setTimeout(()=>{ Singleton.initWorker()},1)
+		}
+	}
+	
+	static async initWorker() {
 		
-		static counter = 0;
+		while(Singleton.queue.length>0) await Singleton.process();
+			
+		Singleton.workers--;		 
+	}
+
+	
+	
+	static process(){
+		
+		return  new Promise((resolve, reject) => {
+			
+			var item = Singleton.queue.shift();
+
+			var img = new Image();
+			img.src = item.src;
+				
+			img.onload = function(){		
+				$(item.current).find('img')[0].src = this.src;
+				$(item.current).find('.spinner').remove();	
+				
+				resolve();
+			}					
+		});
+	}
+}
+
+class AsyncImage extends Component{
 
 		constructor(props){
 			super(props)
 			this.elem = createRef();
 		}
 	  
-		componentDidMount(){
-
+	  	componentDidMount(){
+		
+			var src  = this.props.src;
+			
 			this.elem.current.style.height = this.props.height;
-			this.elem.current.style.width  = this.props.width;
+			this.elem.current.style.width  = this.props.width;			
 		
-		
-			if(AsyncImage.counter<AsyncImage.max){ 
-				AsyncImage.counter++;
-				this.load();
-			}		
-			else {
-			
-				var x = setInterval(()=>{
-					if(AsyncImage.counter<AsyncImage.max){ 
-						AsyncImage.counter++;
-						clearInterval(x)
-						this.load();
-					}
-				}, 200)				
-			
-			}		
+			var current = this.elem.current;
+					
+			Singleton.add({current, src})
 		}
-	
-		loaded =()=>{
-			var spinner = $(this.elem.current).find('.spinner');
-			
-			spinner.addClass('hide');
-			
-			setTimeout(()=>{
-				spinner.remove();
-			},500)
-		}
-
-
-		load = ()=>{
-			var _this = this;
-
-			var img = new Image();
-			img.src = this.props.src;
-			
-			img.onload = function(){
-								
-				$(_this.elem.current).find('img')[0].src = this.src;
-				
-				if(!_this.props.height) _this.elem.current.style.height = this.height + "px";
-				if(!_this.props.width)  _this.elem.current.style.width  = this.width + "px";
-
-				_this.loaded();
-				AsyncImage.counter--;
-			}		
-		}
-
-		
+	  
 		render() {
 			return (
 			    <div ref={this.elem} className={this.props.className + ' async-image'}  >	        

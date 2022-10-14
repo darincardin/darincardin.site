@@ -15,17 +15,11 @@ import GalleryImg from './GalleryImg.jsx'
 class Other extends Component {
 
 
+	xxgallery = ['bird']
+
 	gallery = ['bird', 'birds', 'birds2','cat','clouds','duck','gator','hawk','lily1','lily2','lily3',
 	           'lizard','moon','pink1','pink3','rabbit','red1','rocks','sea','stork','street',
 	           'suncactus','sunset', 'yucca'];
-
-	componentDidMount(){	
-		
-		
-		//	$('.gallery a.gal_item').touch();
-		//$('#gallerySlider').empty();	
-		//$('.gallery a.gal_item').touchTouch();
-	}
 
 	render(){
 		return (
@@ -40,8 +34,6 @@ class Other extends Component {
 									I'm an avid hiker, and have a <a className="lnk" target="_blank"  href="https://www.youtube.com/user/darincardin" >uTube</a> channel that follows my trips to different wilderness locations across the
 									country. While on these trips, I demonstrate survival techniques that may be effective if you were ever lost.
 									The techniques range from improvised fire making to edible cacti.
-
-								    
 								</p>
 						</div>		
 					

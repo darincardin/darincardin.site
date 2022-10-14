@@ -27,24 +27,17 @@ class Main extends Component {
 				import ( './style/loading.css')		,
 				import ('bootstrap/dist/css/bootstrap.min.css')	,	
 				import ( './style/async-image.scss')
-			]).then(()=>{
-				
-				console.log($('.loader1'))
+			]).then(()=>{			
+		
 				$('.loader1').remove();
-				
-				
-				
+
 				this.setState({loading:false})
 				
 				Promise.all([
 					import ( './style/validation.scss'),
 					import ( './style/tooltip.css'),
 					import ( './style/tokenizer.scss'),
-					import ( './style/stepbar.scss')
-					
-				
-					
-					
+					import ( './style/stepbar.scss')				
 				]).then(()=>{})	
 				
 			})
