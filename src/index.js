@@ -3,10 +3,12 @@ import {Component} from 'preact'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'counter/dist/css/counter.min.css'
 
+var $ = window.jQuery = window.$ = require('jquery');
 
-import $ from 'jquery';
-
+ 
+require('counter');    
 
 import App from './components/app';
 
@@ -24,7 +26,7 @@ class Main extends Component {
 				import ('./style'),
 				import ('./style/header.scss'),
 				import ('./style/navigation.css'),
-				import ( './style/loading.css')		,
+				import ('./style/loading.css')		,
 				import ('bootstrap/dist/css/bootstrap.min.css')	,	
 				import ( './style/async-image.scss')
 			]).then(()=>{			

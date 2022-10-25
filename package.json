@@ -31,7 +31,8 @@
     "sass-loader": "^7.3.1",
     "sirv-cli": "1.0.3",
     "stepbar": "darincardin/stepbar",
-    "tokenizer": "darincardin/tokenizer"
+    "tokenizer": "darincardin/tokenizer",
+    "counter": "darincardin/counter"
   },
   "dependencies": {
     "bootstrap": "5.2",

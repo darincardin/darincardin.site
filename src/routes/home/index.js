@@ -8,8 +8,13 @@ import style from './style.css';
 
 var Home = props => {
   
+  	setTimeout(()=>{
+	
+		//$('.counter').counter();
+	}, 1000);
+  	
+  
 	var primary = [		
-		//{name:'Total Exp', years:[1,1,1,1,1,1,1,1,1]},
 		{name:'Angular', years:[1,1,1,1]},
 		{name:'React', years:[1]},
 		{name:'JQuery', years:[1,1,1]},
@@ -67,7 +72,11 @@ var Home = props => {
 								I have experience with best practices such as design patterns, web optimization, 
 								use of third-party libraries, etc.
 							</p>					
-							<p>I live in the Boston area, and am looking for a remote, mid-level React or Angular position.
+							<p>
+								I live in the Boston area, and am looking for a remote, mid-level React or Angular position.
+							
+								<div class="counter"></div>
+								
 							<br/>
 							</p>	
 						
