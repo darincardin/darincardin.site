@@ -48,7 +48,13 @@ class Main extends Component {
 		//this.setState({loading:false})
 	}
 
-	
+	renderxx = ()=> {
+		return (		
+			<>
+				<div></div>
+			</>
+		)
+	}	
 	render = ()=> {
 		return (		
 			<>

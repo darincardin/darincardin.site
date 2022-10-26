@@ -21,7 +21,7 @@ class Navigation extends Component {
 	      {this.state.dropdown &&
 		      <Nav as="ul" onClick={this.toggle} >
 		      	 <Nav.Item  as="li"><NavLink to="/casestudy">Case Study</NavLink></Nav.Item> 
-		      	 <Nav.Item  as="li"><NavLink to="/react/step">ReactJS</NavLink></Nav.Item> 
+		      	 <Nav.Item  as="li"><NavLink to="/react/step">Widgets</NavLink></Nav.Item> 
 		      	 <Nav.Item  as="li"><NavLink to="/svg">SVG</NavLink></Nav.Item> 
 			  </Nav>
 		   }

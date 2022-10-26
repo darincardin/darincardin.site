@@ -10,7 +10,13 @@ var Home = props => {
   
   	setTimeout(()=>{
 	
-		//$('.counter').counter();
+		var a = $('.counter').counter();
+		
+		
+		setInterval(()=>{
+			a.increment();
+		},1000);
+		
 	}, 1000);
   	
   
@@ -75,7 +81,7 @@ var Home = props => {
 							<p>
 								I live in the Boston area, and am looking for a remote, mid-level React or Angular position.
 							
-								<div class="counter"></div>
+								
 								
 							<br/>
 							</p>	

@@ -59,7 +59,7 @@ export default {
 
 	text:`
 	<div>
-	The form is built from an array of fields that you define.
+	The form is built with ReactJS and is generated from an array of fields that you define.
 						
 	<ul>
 		<li>Error validation triggered on submit</li>

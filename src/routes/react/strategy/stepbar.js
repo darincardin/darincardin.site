@@ -6,22 +6,18 @@ import StepBar from '../../../components/common/stepbar/src/StepBar/StepBar.jsx'
 
 class Widget extends Component{
 	
-	 state = { step:0 };
+	state = { step:0 };
 	
-	 array = [
+	array = [
 		{label:"Step 1"},
 		{label:"Step 2"},
 		{label:"Step 3"}
-	]
+	]	
 	
-	
-	 change = ()=>{
+	change = ()=>{
 		var next =  this.state.step<2 ? ++this.state.step : 0;
-		
 		this.setState({step: next});
 	}	
-	
-
 	
 	render = () => (
 		<div style={{width:'300px', position: 'relative', zIndex:'5',borderRadius: '5px', padding: '20px', background: 'white', margin:'20px auto'}}>
@@ -29,7 +25,6 @@ class Widget extends Component{
 			<br />
 			<button onClick={this.change} className="btn btn-primary">Next Step</button>
 		</div>
-
 	)
 }
 
@@ -51,7 +46,7 @@ var array = [ {label:"Step 1"},  {label:"Step 2"}, {label:"Step 3"} ];
 				
 <StepBar index={state.step} array={array}/>`,
   
-    text: "Step Bar widget shows the users progress in a multistep situation."
+    text: "Step Bar React widget shows the users progress in a multistep situation."
 	
 }
 
