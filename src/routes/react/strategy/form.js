@@ -43,6 +43,7 @@ class	Widget extends Component {
 
 export default {
 	widget: Widget,
+	title: "Form",
 	path: "/react/form",
 	url:"https://github.com/darincardin/form",
 	code: 
@@ -59,7 +60,7 @@ export default {
 
 	text:`
 	<div>
-	The form is built with ReactJS and is generated from an array of fields that you define.
+	This widget is generated from an array of fields that you define:
 						
 	<ul>
 		<li>Error validation triggered on submit</li>

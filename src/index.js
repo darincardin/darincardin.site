@@ -3,12 +3,11 @@ import {Component} from 'preact'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'counter/dist/css/counter.min.css'
 
 var $ = window.jQuery = window.$ = require('jquery');
 
  
-require('counter');    
+  
 
 import App from './components/app';
 
@@ -48,13 +47,7 @@ class Main extends Component {
 		//this.setState({loading:false})
 	}
 
-	renderxx = ()=> {
-		return (		
-			<>
-				<div></div>
-			</>
-		)
-	}	
+
 	render = ()=> {
 		return (		
 			<>

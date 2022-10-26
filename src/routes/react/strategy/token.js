@@ -27,12 +27,13 @@ class Widget  extends Component{
 
 export default {
 	widget: Widget,
+	title: "Tokenizer",
 	path: "/react/token",
 	url:"https://github.com/darincardin/tokenizer",
 	code: `<Tokenizer name="tokens" tokens={this.state.tokens} setState={this.onChange}  />`,
 	text: `					
 	<div>
-		Tokenizer React widget creates tokens from your inputs.
+		This widget creates tokens from your inputs.
 		<ul>
 			<li>Duplicate tokens are blocked</li>
 			<li>Widget built with React and Bootstrap</li>

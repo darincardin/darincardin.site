@@ -4,22 +4,10 @@ import AsyncImage from '../../components/AsyncImage/AsyncImage.jsx'
 
 import style from './style.css';
 
-//import style from './style.scss';
 
 var Home = props => {
   
-  	setTimeout(()=>{
-	
-		var a = $('.counter').counter();
-		
-		
-		setInterval(()=>{
-			a.increment();
-		},1000);
-		
-	}, 1000);
-  	
-  
+
 	var primary = [		
 		{name:'Angular', years:[1,1,1,1]},
 		{name:'React', years:[1]},

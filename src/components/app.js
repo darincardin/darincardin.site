@@ -1,3 +1,4 @@
+import {Component} from 'preact'
 
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import React, { Suspense } from 'react';
@@ -17,36 +18,46 @@ const Other = React.lazy(() => import('../routes/other/'));
 
 
 
-const App = () => {
+class App extends Component {
 
-	return	(
-		<>
-				
-		{ typeof window !== "undefined" && 
-		<Router>
-			<div id="app">
-				<Layout.Header />		
-				<main>	
-					<Suspense fallback={Layout.Fallback}>
-						<Switch>
-							<Route path="/home"   component={Home} />	
-							<Route path="/resume" component={Resume} />
-							<Route path="/other"  component={Other} />
-							<Route path="/react"  component={Code} />
-							<Route path="/casestudy"  component={CaseStudy} />
-							<Route path="/svg"  component={SVG} />	
-							<Redirect from="/" to="/home" />	
-						</Switch>
-					</Suspense>
+	state = {hasError:false}
 
-				</main>					
-				<Layout.Footer />	
-			</div>
-		</Router>	
-		}
-</>
-)
- 
+    static xxgetDerivedStateFromError(error) {
+		console.log('ddfd')
+		return({hasError:true})	
+    }
+
+	render(){
+		return	(
+			<>
+		
+			{ typeof window !== "undefined" && 
+			<Router>
+				<div id="app">
+					<Layout.Header />		
+					<main>	
+	
+					
+						{!this.state.hasError && 
+							<Suspense fallback={Layout.Fallback}>
+								<Switch>
+									<Route path="/home"   component={Home} />	
+									<Route path="/resume" component={Resume} />
+									<Route path="/other"  component={Other} />
+									<Route path="/react"  component={Code} />
+									<Route path="/casestudy"  component={CaseStudy} />
+									<Route path="/svg"  component={SVG} />	
+									<Redirect from="/" to="/home" />	
+								</Switch>
+							</Suspense>
+						}
+					</main>					
+					<Layout.Footer />	
+				</div>
+			</Router>	
+			}
+		
+	</>)}	 
 
 }
 

@@ -2,13 +2,11 @@ import React, { Suspense } from 'react';
 import Nav from './navigation.js'
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 
-
+import Layout from '../../components/layout'
 import SyntaxLoader from '../../components/common/syntaxloader'
-
-
 import StrategyList from './strategy'
 
-import Layout from '../../components/layout'
+
 
 var Code = () => {
 
@@ -30,6 +28,7 @@ var Code = () => {
 													<Route path={w.path}  >
 														<div className="row">
 															<div className='col-xs-12 col-sm-6'>
+																<h3>{w.title}</h3>
 																<div dangerouslySetInnerHTML={{ __html: w.text }} />
 																<SyntaxLoader code={w.code}/>								
 

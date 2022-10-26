@@ -37,6 +37,7 @@ class Widget extends Component{
 
 export default {
 	widget: Widget,
+	title: "Step Bar",
 	path: "/react/step",
 	url:"https://github.com/darincardin/stepbar",
     code: 
@@ -46,7 +47,7 @@ var array = [ {label:"Step 1"},  {label:"Step 2"}, {label:"Step 3"} ];
 				
 <StepBar index={state.step} array={array}/>`,
   
-    text: "Step Bar React widget shows the users progress in a multistep situation."
+    text: "This React widget shows the users progress in a multistep situation."
 	
 }
 
