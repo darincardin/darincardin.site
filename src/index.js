@@ -4,9 +4,11 @@ import {Component} from 'preact'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-var $ = window.jQuery = window.$ = require('jquery');
 
- 
+if(typeof window !== "undefined")
+	 window.jQuery = window.$ = require('jquery');	
+
+var $ = require('jquery'); 
   
 
 import App from './components/app';
@@ -49,9 +51,16 @@ class Main extends Component {
 
 
 	render = ()=> {
+		
+		
 		return (		
-			<>
-				{ this.state.loading ? <Layout.Loading />  : <App /> }	
+			<>	
+					{ 
+						//typeof window !== "undefined" && (
+							this.state.loading ? <Layout.Loading />  : <App /> 
+					//	)
+			
+					}	
 			</>
 		)
 	}

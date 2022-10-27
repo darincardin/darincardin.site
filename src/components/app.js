@@ -4,6 +4,9 @@ import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom
 import React, { Suspense } from 'react';
 
 
+
+
+
 import Layout from './layout'
 
 
@@ -22,35 +25,36 @@ class App extends Component {
 
 	state = {hasError:false}
 
-    static xxgetDerivedStateFromError(error) {
-		console.log('ddfd')
+    static getDerivedStateFromError(error) {
 		return({hasError:true})	
     }
 
-	render(){
+	render() {
 		return	(
 			<>
 		
-			{ typeof window !== "undefined" && 
+			{ 
 			<Router>
 				<div id="app">
 					<Layout.Header />		
 					<main>	
-	
-					
-						{!this.state.hasError && 
-							<Suspense fallback={Layout.Fallback}>
-								<Switch>
-									<Route path="/home"   component={Home} />	
-									<Route path="/resume" component={Resume} />
-									<Route path="/other"  component={Other} />
-									<Route path="/react"  component={Code} />
-									<Route path="/casestudy"  component={CaseStudy} />
-									<Route path="/svg"  component={SVG} />	
-									<Redirect from="/" to="/home" />	
-								</Switch>
-							</Suspense>
-						}
+						<div>{this.state.hasError && <Layout.ErrorPage />}</div>
+						
+						<div>
+							{!this.state.hasError && 
+								<Suspense fallback={Layout.Fallback}>
+									<Switch>
+										<Route path="/home"   component={Home} />	
+										<Route path="/resume" component={Resume} />
+										<Route path="/other"  component={Other} />
+										<Route path="/react"  component={Code} />
+										<Route path="/casestudy"  component={CaseStudy} />
+										<Route path="/svg"  component={SVG} />	
+										<Redirect from="/" to="/home" />	
+									</Switch>
+								</Suspense>
+							}
+						</div>
 					</main>					
 					<Layout.Footer />	
 				</div>

@@ -1,7 +1,7 @@
 import { Component } from 'preact';
 
 
-import 'counter/dist/css/counter.min.css'
+import 'counter/dist/css/counter.min.css';
 require('counter');  
 
 
@@ -40,8 +40,8 @@ class Widget extends Component{
 		<div style={{width:'400px', position: 'relative', zIndex:'5', borderRadius: '5px', padding: '20px', background: 'white', margin:'20px auto'}}>
 			<div class="counter" />
 			
-			<button onClick={this.toggleIncrement} className="btn btn-secondary">
-				{this.state.increment?"Disable":"Enable"} Increment
+			<button onClick={this.toggleIncrement} className="btn btn-secondary" style={{width:'160px'}}>
+				{this.state.increment?"Disable":" Enable"} Increment
 			</button> &nbsp;
 			
 			<button onClick={this.clear}  className="btn btn-secondary" >Clear</button> &nbsp;
