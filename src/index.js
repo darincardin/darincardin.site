@@ -28,8 +28,7 @@ class Main extends Component {
 				import ('./style/header.scss'),
 				import ('./style/navigation.css'),
 				import ('./style/loading.css')		,
-				import ('bootstrap/dist/css/bootstrap.min.css')	,	
-				import ( './style/async-image.scss')
+				import ('bootstrap/dist/css/bootstrap.min.css')	
 			]).then(()=>{			
 		
 				$('.loader1').remove();
@@ -55,12 +54,7 @@ class Main extends Component {
 		
 		return (		
 			<>	
-					{ 
-						//typeof window !== "undefined" && (
-							this.state.loading ? <Layout.Loading />  : <App /> 
-					//	)
-			
-					}	
+				{ this.state.loading ? <Layout.Loading />  : <App /> }	
 			</>
 		)
 	}

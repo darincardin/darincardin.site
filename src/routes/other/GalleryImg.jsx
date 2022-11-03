@@ -1,6 +1,8 @@
-import React from "react";
 
-import AsyncImage from '../../components/AsyncImage/AsyncImage.jsx'   
+
+
+import AsyncImg from '../../components/common/asyncimage/AsyncImg.jsx'   
+
 
 
 var GalleryImg = props =>{
@@ -12,7 +14,7 @@ var GalleryImg = props =>{
 
 
 		return (		
-			<AsyncImage className="gallery_item" height="66px" width="100px" src={path.small} href={path.normal}   />  	
+			<AsyncImg className="gallery_item" height="66px" width="100px" src={path.small} href={path.normal}   />  	
 		)
 }
 

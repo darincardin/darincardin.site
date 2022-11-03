@@ -1,7 +1,6 @@
 import {Component} from "preact";
 
 
-import AsyncImage from '../../components/AsyncImage/AsyncImage.jsx'  
 
 import GalleryImg from './GalleryImg.jsx'
 
