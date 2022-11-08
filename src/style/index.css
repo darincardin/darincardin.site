@@ -1,17 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 html, body, #app {
 	background: white;
 	color:black;
@@ -175,20 +163,29 @@ hr{
 	}
 	
 	
-	
-.photo {
-	float:right;
-	margin-left: 5px!important;
-}
+
 	
 	
 .gallery_item img{
 	opacity: .7;
 	transition: opacity .4s;
 	
-	&:hover {	opacity:1; }
+	
 }
 	
+.gallery_item img:hover {	opacity:1; }
 	
-		.spinner.hide { opacity:0!important; }
+.spinner.hide { opacity:0!important; }
+
+	
+.photo {
+	float:right;
+	margin-left: 5px!important;
+}
+
+.loadimage-example {
+	width: 100%;
+    max-width: 700px;
+	
+}
 		

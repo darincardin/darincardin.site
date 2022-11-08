@@ -2,12 +2,11 @@ import {Component} from "preact";
 import React from "react";
 
 
-import 'asyncimage/dist/css/asyncimage.min.css';
 
 import $ from 'jquery';
 
-
-require('asyncimage');  
+import 'loadimage/dist/css/loadimage.css';
+require('loadimage/dist/js/loadimage.js');  
 
 
 
@@ -20,7 +19,7 @@ class AsyncImage extends Component{
 	}
 
 	componentDidMount(){
-		$(this.elem.current).asyncimage();
+		$(this.elem.current).loadimage();
 	}
 
 

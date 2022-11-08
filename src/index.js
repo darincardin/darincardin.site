@@ -1,12 +1,7 @@
 import {Component} from 'preact'
 
 
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-if(typeof window !== "undefined")
-	 window.jQuery = window.$ = require('jquery');	
+if(typeof window !== "undefined") window.jQuery = window.$ = require('jquery');	
 
 var $ = require('jquery'); 
   
@@ -28,7 +23,7 @@ class Main extends Component {
 				import ('./style/header.scss'),
 				import ('./style/navigation.css'),
 				import ('./style/loading.css')		,
-				import ('bootstrap/dist/css/bootstrap.min.css')	
+				import ('bootstrap/dist/css/bootstrap.css')	
 			]).then(()=>{			
 		
 				$('.loader1').remove();

@@ -8,5 +8,6 @@ export default 	()=> (
 		  <Nav.Item><NavLink to="/react/form">Form</NavLink></Nav.Item>
 		  <Nav.Item><NavLink to="/react/token">Tokenizer</NavLink></Nav.Item>   
 		  <Nav.Item><NavLink to="/react/counter">Counter</NavLink></Nav.Item>   
+		  <Nav.Item><NavLink to="/react/loadimage">Load Image</NavLink></Nav.Item>   
         </Nav>
 )

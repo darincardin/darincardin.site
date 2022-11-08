@@ -33,7 +33,7 @@
     "stepbar": "darincardin/stepbar",
     "tokenizer": "darincardin/tokenizer",
     "counter": "darincardin/counter",
-    "asyncimage": "darincardin/async-image"
+    "loadimage": "darincardin/loadimage"
   },
   "dependencies": {
     "bootstrap": "5.2",
