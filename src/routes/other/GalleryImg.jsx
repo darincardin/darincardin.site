@@ -1,7 +1,7 @@
 
 
 
-import AsyncImg from '../../components/common/asyncimage/AsyncImg.jsx'   
+import ImgLoad from '../../components/common/loadimage/ImgLoad.jsx'   
 
 
 
@@ -14,7 +14,7 @@ var GalleryImg = props =>{
 
 
 		return (		
-			<AsyncImg className="gallery_item" height="66px" width="100px" src={path.small} href={path.normal}   />  	
+			<ImgLoad className="gallery_item" height="66px" width="100px" src={path.small} href={path.normal}   />  	
 		)
 }
 

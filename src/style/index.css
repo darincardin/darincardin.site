@@ -184,8 +184,11 @@ hr{
 }
 
 .loadimage-example {
-	width: 100%;
-    max-width: 700px;
-	
+	width: 400px;
+
+	height: 221px;
+    xxsmax-width: 700px;
+	xxmax-height:388px;
+	xxheight:388px;
 }
 		

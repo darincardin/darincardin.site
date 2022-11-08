@@ -3,7 +3,6 @@ import React from "react";
 
 
 
-import $ from 'jquery';
 
 import 'loadimage/dist/css/loadimage.css';
 require('loadimage/dist/js/loadimage.js');  
@@ -11,7 +10,7 @@ require('loadimage/dist/js/loadimage.js');
 
 
 
-class AsyncImage extends Component{
+class ImgLoad extends Component{
 
 	constructor(props){
 		super(props)	
@@ -31,7 +30,7 @@ class AsyncImage extends Component{
 
 
 
-export default AsyncImage;
+export default ImgLoad;
 
 
 

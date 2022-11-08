@@ -1,6 +1,6 @@
 import React from "react";
 
-import AsyncImg from '../../components/common/asyncimage/AsyncImg.jsx'   
+import ImgLoad from '../../components/common/loadimage/ImgLoad.jsx'   
 
 import style from './style.css';
 
@@ -54,7 +54,7 @@ var Home = props => {
 							<hr />	
 			
 			
-							<AsyncImg width="300px" height="236px" className="photo" src="assets/me1.jpg" />
+							<ImgLoad width="300px" height="236px" className="photo" src="assets/me1.jpg" />
 					
 							<p> 
 								I've been a software engineer for nine years. I've worked at companies of all sizes, including Microsoft, Alitsource, and 
