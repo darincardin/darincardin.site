@@ -10,11 +10,25 @@ class Widget extends Component{
 	
 	path =  "/assets/utah.jpg?v=" + parseInt(Math.random()*10000);
 
+	constructor(){
+		super();
+			console.log('aaa');
+	}
+	
+	componentDidMount(){
+		console.log('bbb');
+		$('.aaa').loadimage();
+		$('.bbb').loadimage();
+	}
+
 
 	render = () => (
-		<div style={{ position: 'relative', zIndex:'5', borderRadius: '5px', padding: '20px', background: 'white', margin:'20px auto'}}>
+		<div style={{ position: 'relative', zIndex:'5', borderRadius: '5px',  background: 'white', margin:'20px auto'}}>
 			
-			<ImgLoad  className="loadimage-example" src={this.path}  />
+			
+			<div  className="aaa loadimage-example" src={this.path}  >257k image</div>
+			<br /><br />
+			<div  className="bbb loadimage-example" src="dummy.jpg"  >broken image</div>
 		</div>
 	)
 }

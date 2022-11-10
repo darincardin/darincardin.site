@@ -19,10 +19,10 @@ class Main extends Component {
 		
 		if( typeof window !== "undefined" ){
 			Promise.all([
-				import ('./style'),
+				import ('./style/index.scss'),
 				import ('./style/header.scss'),
 				import ('./style/navigation.css'),
-				import ('./style/loading.css')		,
+				import ('./style/loading.css'),
 				import ('bootstrap/dist/css/bootstrap.css')	
 			]).then(()=>{			
 		

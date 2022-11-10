@@ -23,4 +23,12 @@ dropdown-menu.show{
 
 .nav.secondary-nav	.nav-item a.active {
 	border-top: 4px solid black;
+	Pointer-events: none;
 }		
+
+@media only screen and (max-width: 500px) {
+	.nav.secondary-nav .nav-item {
+	    padding-right: 5px;
+	    font-size: 14px;
+	}
+}

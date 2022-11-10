@@ -18,12 +18,13 @@ class ImgLoad extends Component{
 	}
 
 	componentDidMount(){
+	
 		$(this.elem.current).loadimage();
 	}
 
 
 	render() {
-		return ( <div ref={this.elem} {...this.props} /> );
+		return ( <div ref={this.elem} {...this.props} >{this.props.children}</div> );
 	}
 }
 
