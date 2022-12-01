@@ -1,12 +1,21 @@
 import { Component } from 'preact';
 
-import Tokenizer from '../../../components/common/tokenizer/src/Tokenizer/Tokenizer.jsx'; 
+//import Tokenizer from '../../../components/common/tokenizer/src/Tokenizer/Tokenizer.jsx'; 
 
-
+import Tokenizer from 'tokenizer/dist/react/index.js'; 
+require(  'tokenizer/dist/jquery/js/index.js'); 
 
 class Widget  extends Component{
 	
 	state = {tokens: [] } ;
+	
+	t = ['ddddd']
+	
+	componentDidMount(){
+		
+		$('#aaa').tokenizer({tokens:this.t});
+	}
+	
 	
 	change = (obj, next)=>{
 		this.setState(obj, next);
@@ -19,6 +28,9 @@ class Widget  extends Component{
 	render = ()=>(
 		<div style={{width:'300px', margin:'20px auto'}}>
 			<Tokenizer name="tokens" tokens={this.state.tokens} setState={this.change} /> 	
+			
+			<div id="aaa"></div>
+			
 			<button onClick={this.submit} className="btn btn-primary">Submit</button>
 		</div>
 	)
