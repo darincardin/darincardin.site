@@ -3,7 +3,7 @@ import { Component } from 'preact';
 //import Tokenizer from '../../../components/common/tokenizer/src/Tokenizer/Tokenizer.jsx'; 
 
 import Tokenizer from 'tokenizer/dist/react/index.js'; 
-require(  'tokenizer/dist/jquery/js/index.js'); 
+
 
 class Widget  extends Component{
 	
@@ -11,11 +11,7 @@ class Widget  extends Component{
 	
 	t = ['ddddd']
 	
-	componentDidMount(){
-		
-		$('#aaa').tokenizer({tokens:this.t});
-	}
-	
+
 	
 	change = (obj, next)=>{
 		this.setState(obj, next);
@@ -27,9 +23,7 @@ class Widget  extends Component{
 	
 	render = ()=>(
 		<div style={{width:'300px', margin:'20px auto'}}>
-			<Tokenizer name="tokens" tokens={this.state.tokens} setState={this.change} /> 	
-			
-			<div id="aaa"></div>
+			<Tokenizer  tokens={this.state.tokens} setState={this.change} /> 	
 			
 			<button onClick={this.submit} className="btn btn-primary">Submit</button>
 		</div>
@@ -42,10 +36,10 @@ export default {
 	title: "Tokenizer",
 	path: "/react/token",
 	url:"https://github.com/darincardin/tokenizer",
-	code: `<Tokenizer name="tokens" tokens={this.state.tokens} setState={this.onChange}  />`,
+	code: `<Tokenizer tokens={this.state.tokens} setState={this.onChange}  />`,
 	text: `					
 	<div>
-		This widget creates tokens from your inputs.
+		This React widget creates tokens from your inputs.
 		<ul>
 			<li>Duplicate tokens are blocked</li>
 			<li>Widget built with React and Bootstrap</li>

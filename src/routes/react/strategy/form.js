@@ -60,7 +60,7 @@ export default {
 
 	text:`
 	<div>
-	This widget is generated from an array of fields that you define:
+	This React widget is generated from an array of fields that you define:
 						
 	<ul>
 		<li>Error validation triggered on submit</li>

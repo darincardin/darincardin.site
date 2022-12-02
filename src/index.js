@@ -32,9 +32,7 @@ class Main extends Component {
 				
 				Promise.all([
 					import ( './style/validation.scss'),
-					import ( './style/tooltip.css'),
-					import ( './style/tokenizer.scss'),
-					import ( './style/stepbar.scss')				
+					import ( './style/tooltip.css')		
 				]).then(()=>{})	
 				
 			})

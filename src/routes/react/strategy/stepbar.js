@@ -33,13 +33,13 @@ export default {
 	title: "Step Bar",
 	path: "/react/step",
 	url:"https://github.com/darincardin/stepbar",
-    code: `
-var state = {step:1};			
+    code: 
+`var state = {step:1};			
 var array = ["A","B","C", "E"];	
 				
 <StepBar index={state.step} array={array}/>`,
   
-    text: "This React widget shows the users progress in a multistep situation."
+    text: "<div>This React widget shows the users progress in a multistep situation.</div>"
 	
 }
 
