@@ -11,7 +11,11 @@ html, body, #app {
 	overflow-x:hidden;
 	margin:0;
 }
+
+#app{
 	
+	min-width:200px;
+}	
 
 h3{
     margin: 0px 0 0px 0px!important;	    
@@ -195,5 +199,16 @@ hr{
 }
 	
 	
+#home .photo {	
+	@media only screen and (max-width: 600px) {
+    	width: 150px!important;
+    	height: 115px!important;
+	}
+	
+	
+	@media only screen and (max-width: 350px) {
+		float:none;
+	}
+}
 
 		

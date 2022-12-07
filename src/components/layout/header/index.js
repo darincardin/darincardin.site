@@ -22,7 +22,7 @@ var Header =  props => {
 							Hello, I'm a front-end web developer with nine years of experience.&nbsp;
 							<br className="hidden-xs hidden-sm"/>
 
-							<span>My focus is React and Angular. </span>
+							<span className="hidden-xs hidden-sm">My focus is React and Angular. </span>
 						</div>
 			
 					</article>

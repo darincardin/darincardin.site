@@ -22,7 +22,7 @@ class Widget  extends Component{
 	}
 	
 	render = ()=>(
-		<div style={{width:'300px', margin:'20px auto'}}>
+		<div style={{width:'100%',  margin:'20px auto'}}>
 			<Tokenizer  tokens={this.state.tokens} setState={this.change} /> 	
 			
 			<button onClick={this.submit} className="btn btn-primary">Submit</button>
