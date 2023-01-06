@@ -1,21 +1,16 @@
-
-/*
-export default 	(<div className="loader">
-					<img  src="/assets/preloader.gif" />
-				</div>	)
+import {Component} from 'preact'
 
 
-
-
-*/
-
-
-
-var Loading = ()=>{
+class Loading extends Component {
 	
-	return 	(<div className="loader1">
-					<img  src="/assets/preloader.gif" />
-			 </div>	)
+	render() {
+
+		return 	(		
+			<div className="loader1"> 
+				<img  src="/assets/preloader.gif" />
+			</div>
+		)
+	}
 }
 
 

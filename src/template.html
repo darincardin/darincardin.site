@@ -3,6 +3,8 @@
 	<head>
 		<style>
 		
+	
+				
 		html, body, #app{ margin:0;height:100%; }
 		
 		#app{
@@ -10,7 +12,12 @@
 			
 		}
 		
+
+		
+				
 		.loader1 {
+		    opacity: 1;
+    		transition: opacity 0.75s;
 			z-index:10;
 			position: fixed;
 			top:0;
@@ -19,6 +26,8 @@
 			right:0;
 			background:white;
 		}
+		
+
 
 		.loader1 img {	
 			position: absolute;
@@ -47,17 +56,11 @@
 	</head>
 	
 	<body>
-	
-	
-
-	
-			<div class="loader1">
-				<img  src="/assets/preloader.gif" />
+			<div class="init-loader loader1">
+				<img src="/assets/preloader.gif" />
 			</div>
 		
-
-
 		<% preact.bodyEnd %>
-
+	</body>
 
 </html>

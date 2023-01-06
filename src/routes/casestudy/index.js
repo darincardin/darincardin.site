@@ -44,7 +44,7 @@ var CaseStudy = props => {
 					
 					A super user could then log in and view/update the current orders. 
 				
-					I have incuded links to a demo of 
+					I have included links to a demo of 
 					the <a target="_blank" href="http://demo.darincardin.infinityfreeapp.com">form</a> and <a target="_blank" href="http://demo.darincardin.infinityfreeapp.com/login.html">admin section</a>.
 
 					

@@ -57,7 +57,7 @@ var Home = props => {
 							<ImgLoad width="300px" height="236px" className="photo" src="assets/me1.jpg" />
 					
 							<p> 
-								I've been a software engineer for nine years. I've worked at companies of all sizes, including Microsoft, Alitsource, and 
+								I've been a software engineer for nine years. I've worked at companies of many sizes, including Microsoft, Alitsource, and 
 								Soteria Networks.
 							</p>
 							<p>

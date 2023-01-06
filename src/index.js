@@ -25,10 +25,13 @@ class Main extends Component {
 				import ('./style/loading.css'),
 				import ('bootstrap/dist/css/bootstrap.css')	
 			]).then(()=>{			
-		
-				$('.loader1').remove();
-
-				this.setState({loading:false})
+			
+			
+			
+				this.setState({loading:false},	()=>{ 
+					$('.init-loader').addClass('hide');
+					setTimeout(()=>{  $('.init-loader').remove()  }, 750)
+				})
 				
 				Promise.all([
 					import ( './style/validation.scss'),
@@ -38,7 +41,6 @@ class Main extends Component {
 			})
 		}
 		
-		//this.setState({loading:false})
 	}
 
 
@@ -47,10 +49,13 @@ class Main extends Component {
 		
 		return (		
 			<>	
-				{ this.state.loading ? <Layout.Loading />  : <App /> }	
+				{!this.state.loading && <App /> }
+				
+			
+			
 			</>
-		)
-	}
+		) // <Layout.Loading loading={this.state.loading}/>
+	}// className={this.state.loading?"":"hide"}
 }
 
 

@@ -10,7 +10,7 @@ header .nav {
 	@media only screen and (max-width: 300px) {
 		float:none;
 	}
-		
+	
 }
 
 
@@ -46,6 +46,10 @@ header ul ul {
 	li{
 		display:block;
 		width: 100%;
+		
+		a {
+			display:block;
+		}
 	}
 }
 
