@@ -8,7 +8,7 @@ require('loadimage/dist/js/loadimage.js');
 
 class Widget extends Component{
 	
-	path =  "/assets/utah.jpg?v=" + parseInt(Math.random()*10000);
+	path =  "/assets/photos/utah.jpg?v=" + parseInt(Math.random()*10000);
 
 	constructor(){
 		super();

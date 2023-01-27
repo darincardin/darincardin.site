@@ -23,7 +23,7 @@ class Navigation extends Component {
 	      <Nav.Item as="li" > <a onClick={this.toggle}>Coding</a> 
 	      
 		      
-		      <Nav as="ul" onClick={this.toggle} style={{opacity:this.state.dropdown?1:0}} >
+		      <Nav as="ul" onClick={this.toggle} style={{display:this.state.dropdown?'block':'none'}} >
 		      	 <Nav.Item  as="li"><NavLink to="/casestudy">Case Study</NavLink></Nav.Item> 
 		      	 <Nav.Item  as="li"><NavLink to="/react/step">Widgets</NavLink></Nav.Item> 
 		      	 <Nav.Item  as="li"><NavLink to="/svg">SVG</NavLink></Nav.Item> 

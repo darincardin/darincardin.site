@@ -20,7 +20,6 @@ var Coding = props => {
 						
 									<div name="card3">					
 											<div>
-												<br />
 												<h3>{w.title}</h3>
 												<hr class="short blue" />
 												

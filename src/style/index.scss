@@ -21,9 +21,7 @@ main {
 
 
 	 li:has( a.active) {
-		xxcolor: #0000a5!important;
-		
-		xxbackground: var(--color_11);
+
 		background: #1400e754!important;
 	 } 
 
@@ -57,6 +55,7 @@ main {
 
 
 /*************** CARDS ***********************************/
+
 [name*=card] {
 		line-height: 23px;
     	font-size: 18px;
@@ -64,8 +63,7 @@ main {
     	
 	    border: solid #5e5e5e 1px;
 	
-		
-		margin: 30px 10px 10px 10px;
+		margin: 30px 10px 10px 10px!important;
 		position: relative;
 		padding: 20px 40px;
 		z-index: 1;	
@@ -73,6 +71,8 @@ main {
 		background: white;
 }
 
+
+/** no padding***/
 [name=card2] {
 		padding:0;	
     	display: inline-block;
@@ -100,7 +100,28 @@ main {
 		}
 }
 
+[name=card4] {
+	margin-top: 20px!important;
+	
+}
 
+
+	
+@media only screen and (max-width: 767px) {	
+	
+	[name*=card] {
+		padding: 5px;
+		margin: 0px 0!important;	
+	}
+	
+	
+	
+}
+	
+	
+
+
+	
 
 
 /******** H, HR *********************/
@@ -146,7 +167,7 @@ main {
 
 h3{
     font-weight: 800;
-    margin: 20px 0 0px 0px!important;	
+    margin: 20px 0 5px 0px!important;	
     
 }
 
@@ -191,5 +212,8 @@ img {
 	}	
 }
 
+	
+
+	
 			
 	

@@ -12,12 +12,12 @@ var Header =  props => {
 
 			
 			
-				<Navigation />
-
-				<article>
-					<h1>Darin Cardin </h1>
-				</article>
 				
+
+			
+					<h1>Darin Cardin </h1>
+				
+				<Navigation />
 				
 			</header>
 	  );
