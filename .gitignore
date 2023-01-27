@@ -5,7 +5,7 @@ org.eclipse.*
 .jsdtscope*
 .project
 package-lock.json
-/xxxsrc/assets/photos/*
+/src/assets/photos/*
 
 
 
