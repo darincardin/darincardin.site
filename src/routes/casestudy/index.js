@@ -11,9 +11,9 @@ var CaseStudy = props => {
 		<>
 		
 			<div  name="casestudy" className="animated fadeIn" >
-				<div  className="container">
-					<div name="body">
-					<div name="card ">
+				<div  className="container-fluid">
+				
+					<div name="card " style={{'max-width':'700px'}}>
 						<div  class="row" >
 						
 								<div class="col-12">
@@ -22,7 +22,6 @@ var CaseStudy = props => {
 										<h1><b>Saint Paul's Church Fundraiser</b></h1>
 									</center>
 
-								 
 								</div>
 							
 							
@@ -33,6 +32,7 @@ var CaseStudy = props => {
 										<h3>The Problem</h3>
 									
 										<ImgLoad name="img" width="300px" height="225px" className="photo" src="assets/photos/x-church.jpg" />
+										
 										Saint Paul's Church runs a yearly fundraiser in which customers preorder lobster rolls.
 										All the orders had to be taken over the phone.
 										The church wished to have this process automated.		
@@ -75,7 +75,7 @@ var CaseStudy = props => {
 						</div>
 					</div>
 					
-				</div>
+				
 			</div>
 		</>
 	);

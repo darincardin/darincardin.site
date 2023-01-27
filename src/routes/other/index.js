@@ -25,7 +25,7 @@ class Other extends Component {
 		return (
 			<div name="other" className="animated fadeIn">
 			    <img name="background-image" src="assets/photos/lizard.jpg" />
-				<div className="container-fluid">
+				<div className="container-fluid-sm">
 					<div className="row">
 					    <div className="col-4 d-none d-sm-block"></div>
 					

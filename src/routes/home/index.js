@@ -44,8 +44,7 @@ var Home = props => {
 		</div>
 	)
 
-
-
+//  
 	return (
 		
 		
@@ -53,17 +52,18 @@ var Home = props => {
 			
 			
 				<img  name="background-image" src="assets/photos/home1.jpg" />
-				<div className="container-fluid-"   >
-				   <div className="row  g-0">
+				<div className="container-fluid-sm"   >
+				   <div className="row ">
 				
-					    <div className="col-4 d-none d-md-block"></div>
+					  <div className="col-sm-4 d-none d-sm-block"></div> 
+
 					
-						<div className="col-12 col-md-8">
+						<div className="col-12 col-sm-8">
 							<div name="card1">
 								<div className="row ">
 									<div className="col-12">
 									
-										<h1 >About Me</h1>
+										<h1 class="short">About Me</h1>
 										<hr class="short" />
 										<p> 
 									

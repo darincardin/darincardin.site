@@ -7,6 +7,7 @@ html, body, #app {
 	margin:0;
 	position:relative;
 	z-index:1;
+	min-width: 300px;
 }
 
 main {
@@ -69,6 +70,7 @@ main {
 		z-index: 1;	
 		box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 83%);
 		background: white;
+		min-width: 300px;
 }
 
 
