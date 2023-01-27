@@ -1,46 +1,39 @@
-import { Redirect, Switch, Route} from "react-router-dom";
 
-import React, { Suspense } from 'react';
-
-import Layout from '../../components/layout'
-
-import Nav from './navigation.js'
-
+import './styles.scss';
 
 
 var SVG = props => {
 
 	return (
 		
-			<div  className="animated fadeIn svg" >
+			<div name="svg" className="animated fadeIn svg" >
 				<div  className="container">
 					<div className="row">
 						<div className="col-xs-12 ">
-							<Nav />
+						
+							<div style="text-align:center;">
+
+
+											
+								<div name="card2">					
+									<img  src="../assets/svg/rocket.svg" />
+								</div>
+								
+								<br />
+								
+								<div name="card2">					
+									<img  src="../assets/svg/partouche.svg" />
+								</div>
+									
+								<br />	
+								<div name="card2">					
+									<img  src="../assets/svg/tropic.svg" />
+								</div>
+							</div>
 						</div>
 					</div>
 					
-					<div className="row">
-						<div className="col-xs-12" >					
-							<Suspense fallback={Layout.Fallback}>
-								<Switch>
-									<Route path="/svg/rocket" >
-										<img  src="../assets/svg/rocket.svg" />
-									</Route>
-										
-									<Route path="/svg/cursive" >
-										<img  src="../assets/svg/partouche.svg" />
-									</Route>
-										
-									<Route path="/svg/tropic" >	
-										<img  src="../assets/svg/tropic.svg" />
-									</Route>
-										
-									<Redirect from="/svg" to="/svg/rocket" />	
-								</Switch>
-							</Suspense>	
-						</div>
-					</div>	
+
 						
 						
 				</div>

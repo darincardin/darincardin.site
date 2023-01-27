@@ -1,8 +1,10 @@
-import React from "react";
 
-import ImgLoad from '../../components/common/loadimage/ImgLoad.jsx'   
+import  './styles.scss';
 
-import style from './style.css';
+//import ImgLoad from '../../components/common/loadimage/ImgLoad.jsx'   
+
+
+
 
 
 var Home = props => {
@@ -20,7 +22,7 @@ var Home = props => {
 
 	var Skill = (props)=> (
 		
-		<div className={style.skill}>
+		<div name="skill">
 			<h4><b>{props.title}</b></h4>
 			<table >
 				<thead>
@@ -33,7 +35,7 @@ var Home = props => {
 						<tr key={i}>
 							<td>{v.name}</td>
 							<td> 
-							{ v.years.map((vv,ii)=> (<i key={ii} className="glyphicon glyphicon-stop red"></i>))}						
+							{ v.years.map((vv,ii)=> (	<i key={ii} name="sq" className="glyphicon glyphicon-stop red"></i>))}					
 							</td>
 						</tr>				
 					))}
@@ -42,49 +44,73 @@ var Home = props => {
 		</div>
 	)
 
+
+
 	return (
 		
 		
-			<div  id="home" className=" animated fadeIn" >
-				<div className="container"   >
-					<div className="row test-margin">
-						<div className="col-xs-12 col-sm-9 col-md-10 ">
-		
-							<h3>About Me</h3>
-							<hr />	
+			<div  name="home" className="animated fadeIn" >
 			
 			
-							<ImgLoad width="300px" height="236px" className="photo" src="assets/me1.jpg" />
+				<img  name="background-image" src="assets/home1.jpg" />
+				<div className="container-fluid"   >
+				   <div className="row ">
+				
+					    <div className="col-4 d-none d-sm-block"></div>
 					
-							<p> 
-								I've been a software engineer for nine years. I've worked at companies of many sizes, including Microsoft, Alitsource, and 
-								Soteria Networks.
-							</p>
-							<p>
+						<div className="col-12 col-sm-8">
+							<div name="card1">
+								<div className="row ">
+									<div className="col-12">
+									
+										<h1 class="short">About Me</h1>
+										<hr class="short" />
+										<p> 
+									
+											Hello, my name is Darin Cardin. New Bedford Massachusetts is my home, I've lived here my whole live. I love to travel, and 
+											go on a 3 month cross country trip every couple years. I have a range of interests, such as computers, hiking, photography, exercise, and fixing things in general.
+											
+											</p>
+											<p>
+											I've been interested in programming since highschool. I graduated from college in 2006, obtaining a Bachelor's degree in Computer science.
+											Shortly after, I took my first job as an intern developer and have been with the field ever since.
+
+										</p>
+														
+									 
+									</div>
+								</div>
 							
-								My current focus is client-side frameworks such as React and Angular. I've used these for a total of five years. 
-								I have experience with best practices such as design patterns, web optimization, 
-								use of third-party libraries, etc.
-							</p>					
-							<p>
-								I live in the Boston area, and am looking for a remote, mid-level React or Angular position.
-							
+								<div className="row ">
+									<div className=" col-12 col-md-5">
+										<h1>Skills</h1>
+										<hr class="short" />
+										<Skill data={primary} />							
+									</div>
+									
+									<div className="col-12 col-md-7">
+										<h1>Work Experience</h1>
+										<hr class="short" />							
+										<p>	
+										
+										I've been a software engineer for nine years. I've worked at companies of many sizes, including Microsoft, Alitsource, and Soteria Networks.
+										Most of my career has been on the front end, using Frameworks like Angular and React.
+										
+										
+										
+										</p>
+										<p>	
+											My current focus are the Wix and Shopify platform. I feel that I bring a unique skillset to the table, having knowledge with website building tools and traditional coding. 
+										
+										</p>
+									</div>
+								</div>
 								
 								
-							<br/>
-							</p>	
-						
-						</div>	
-						<div className="col-xs-12 col-sm-3 col-md-2 ">
 								
-							<h3>Skills</h3>
-							<hr />	
-							<div>
-								<Skill data={primary} />
-	
-								<br /><br />										
+								
+								
 							</div>
-							
 						</div>	
 					</div>	
 
@@ -97,3 +123,4 @@ var Home = props => {
 
 
 export default Home;
+//v

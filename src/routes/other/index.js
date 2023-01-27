@@ -1,5 +1,6 @@
 import {Component} from "preact";
 
+import './styles.scss';
 
 
 import GalleryImg from './GalleryImg.jsx'
@@ -22,23 +23,68 @@ class Other extends Component {
 
 	render(){
 		return (
-			<div className="animated fadeIn"  id="other">
-				<div  className="container">
+			<div name="other" className="animated fadeIn">
+			    <img name="background-image" src="assets/lizard.jpg" />
+				<div className="container-fluid">
 					<div className="row">
-						<div className="col-xs-12 col-sm-5 hiking">
-						
-								<h3>Hiking</h3>
-								<hr />	
+					    <div className="col-4 d-none d-sm-block"></div>
+					
+						<div className="col-12 col-sm-8">
+							<div name="card1">
+				
+								<h1>Hiking</h1>
+								<hr class="short" />	
 								<p>
 									I'm an avid hiker, and have a <a className="lnk" target="_blank"  href="https://www.youtube.com/user/darincardin" >uTube</a> channel that follows my trips to different wilderness locations across the
 									country. While on these trips, I demonstrate survival techniques that may be effective if you were ever lost.
 									The techniques range from improvised fire making to edible cacti.
+								</p>										
+											
+								<br />
+								
+								
+									
+										
+										
+								<h1>Photography</h1>
+								<hr class="short" />									
+								<p>
+										I started doing photography in 2019. I sell my photos 
+										on <a target="_blank" className="lnk" href="https://www.shutterstock.com/g/Darin+Jay+Cardin"> Shutter Stock</a>.
+										Here are some samples of my work.
 								</p>
+								<div className="gallery gall__1">
+										{this.gallery.map((v, i)=>
+											<GalleryImg key={i} file={v} />
+										)}
+								</div>												
+															
+							</div>
+
 						</div>		
 					
+
+					</div>
+				</div>
+			</div>
+		)
+	}
+}
+
+export default Other;
+
+
+/*
+
+
+
+								
+								
+								
+
 						<div className="col-xs-12  col-sm-7 photos">
 
-									<h3>Photography</h3>
+									<h1>Photography</h1>
 									<hr />									
 									<p>
 										I started doing photography in 2019. I sell my photos 
@@ -52,12 +98,4 @@ class Other extends Component {
 									</div>							
 						</div>
 
-					</div>
-				</div>
-			</div>
-		)
-	}
-}
-
-
-export default Other;
+*/

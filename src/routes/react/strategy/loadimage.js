@@ -16,19 +16,20 @@ class Widget extends Component{
 	}
 	
 	componentDidMount(){
-		console.log('bbb');
-		$('.aaa').loadimage();
-		$('.bbb').loadimage();
+
+		$('.imgA').loadimage({width:"150px", height:"118px"});
+		$('.imgB').loadimage();
 	}
 
 
 	render = () => (
-		<div style={{ position: 'relative', zIndex:'5', borderRadius: '5px',  background: 'white', margin:'20px auto'}}>
+		<div style={{ position: 'relative', zIndex:'5', borderRadius: '5px', margin:'20px auto'}}>
 			
-			
-			<div  className="aaa loadimage-example" src={this.path}  >257k image</div>
+			<br />
+			<div name="imgA" className="imgA loadimage-example" src={this.path}  >257k image</div>
+			&nbsp;
+			<div name="imgB" className="imgB loadimage-example" src="dummy.jpg"  >broken image</div>
 			<br /><br />
-			<div  className="bbb loadimage-example" src="dummy.jpg"  >broken image</div>
 		</div>
 	)
 }
@@ -42,9 +43,9 @@ export default {
 	path: "/react/loadimage",
 	url:"https://github.com/darincardin/loadimage",
     code: 
-`<div width="300px" height="236px" className="photo" src="/assets/me1.jpg" />
-
-$(this.elem.current).loadimage();`, 
+`<div width="150px" height="118px" className="photo" src="/assets/me1.jpg" />
+   
+$(this.elem.current).loadimage();`,  
     text: `
 	<div>
 		This JQuery plugin will load an image asynchronously using a setTimeout:							

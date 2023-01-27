@@ -4,15 +4,15 @@
 	footer{
 		z-index: 10000;
 		background: white;
-	
+		position:relative;
 		overflow:hidden;
 	    display: block;
 	    color: black;
 	    padding: 5px 5px 0 5px;
 		height: 35px;
 		text-align:center;
-	    margin-top: 10pxx;
-	    border-top: solid #d8d8d8 1px;
+        border-top: solid #8f8f8f 1px;
+
 	}
 	
 

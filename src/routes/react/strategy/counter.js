@@ -37,7 +37,7 @@ class Widget extends Component{
 
 
 	render = () => (
-		<div style={{width:'100%', 'min-width': '200px', position: 'relative', zIndex:'5', borderRadius: '5px', padding: '20px', background: 'white', margin:'20px auto'}}>
+		<div style={{width:'100%', 'min-width': '200px', position: 'relative', zIndex:'5', borderRadius: '5px', padding: '20px', margin:'20px auto'}}>
 			<div class="counter" />
 			
 			<button onClick={this.toggleIncrement} className="btn btn-secondary" style={{width:'160px'}}>

@@ -33,7 +33,8 @@ class App extends Component {
 		return	(
 			<>
 		
-			{ 
+			
+			<div className="background"></div> 
 			<Router>
 				<div id="app">
 					<Layout.Header />		
@@ -59,7 +60,7 @@ class App extends Component {
 					<Layout.Footer />	
 				</div>
 			</Router>	
-			}
+			
 		
 	</>)}	 
 

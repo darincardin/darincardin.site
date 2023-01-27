@@ -8,28 +8,21 @@
 #
 ##################################################
 
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+RewriteEngine On
+RewriteBase /
+  
+#AddType text/xml ".xml"
   
   
-  RedirectMatch ^/code/.*$ /code
- 
-  RedirectMatch ^/svg/.*$ /svg
-
-  
-  #RewriteRule ^svg/rocket$ index.html [L]
-  #RewriteRule ^svg/rocket$ preloader.gif
-
+RewriteRule ^index\.html$ - [L]
   
 
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
  
 
-  #RewriteRule /svg/rocket /svg/rocket [QSA]
+
   
-  
-  RewriteRule . /index.html [L]
+RewriteRule . /index.html [L]
 

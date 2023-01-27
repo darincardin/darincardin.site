@@ -1,11 +1,15 @@
-#other {
+[name=other] {
 
-	.hiking {
-		img { width: 100%; }
+	&>div {
+		xxbackground: white;
+	}
+
+	
+	 img{
+		opacity: .7;
+		transition: opacity .4s;
+		&:hover {	opacity:1; }
 	}
 	
-	img:hover {
-		opacity:1!important;
-	}
 }
 

@@ -14,7 +14,7 @@ class	Widget extends Component {
 	
 	 onSuccess = result => {
 		var {name, phone, amount, deliver} = result;	
-		alert(`Name: ${name}\n phone: ${phone}\n amount: ${amount}\n deliver: ${deliver}`)	
+		alert(`Name: ${name}\nphone: ${phone}\namount: ${amount}\n`)	
 	}
 
 	 fields = [ 
@@ -23,12 +23,11 @@ class	Widget extends Component {
 		{label:"Phone",  		name:"phone", tag:"phone", format:true},
 		
 		{label:"Order Info",    name:"order-info", tag:"header"},
-		{label:"Amount",        name:"amount", tag:"number", required:true},
-		{label:"Deliver",       name:"deliver", tag:"checkbox"}
+		{label:"Amount",        name:"amount", tag:"number", required:true}
 	]
 
 	render = ()=>(
-		<div style={{background: 'white', borderRadius:'10px', padding: '0 10px', margin:'auto', maxWidth:'450px'}}>
+		<div style={{ padding: '0 10px', margin:'auto', maxWidth:'450px'}}>
 			<Form  object={this.state.object} fields={this.fields} onSuccess={this.onSuccess} >
 				<button type="submit" className="btn btn-primary">Submit</button> 
 			</Form>

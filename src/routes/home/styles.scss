@@ -1,0 +1,46 @@
+
+
+
+
+	
+	[name=home] {
+		
+		[name=skill] {
+			
+			display: inline-block;
+			white-space: nowrap;
+			vertical-align: top;
+			
+			table {
+				
+				thead  {font-weight: bold;}
+				
+				td {
+					white-space: nowrap;
+					&:first-child{padding-right: 40px; }	
+				}
+			}
+						
+			[name=sq] {
+				
+			    	background: red;
+			    	margin: 0 2px;
+				    width: 10px;
+				    height: 10px;
+				    height: 10px;
+				    display: inline-block;
+			}	
+			
+		}
+	
+	}
+
+		
+	
+			
+
+
+
+
+
+	

@@ -6,27 +6,34 @@ class Navigation extends Component {
 
 	state = {dropdown: false}
 
-	toggle =()=>{
+	off = ()=>{
+		this.setState({dropdown: false})
+	}
+
+	toggle = ()=>{
 		this.setState({dropdown: !this.state.dropdown})
 	}
 
 	render =()=> (
     <Nav as="ul" activeKey="/home"  >
-	      <Nav.Item as="li"> <NavLink to="/home">Home</NavLink>  </Nav.Item>
-	      <Nav.Item as="li"> <NavLink to="/resume">Resume</NavLink></Nav.Item>  
+	      <Nav.Item as="li"> <NavLink to="/home" onClick={this.off}>Home</NavLink> </Nav.Item>
+	      <Nav.Item as="li"> <NavLink to="/resume" onClick={this.off}>Resume</NavLink></Nav.Item>  
 	      
 	 
-	      <Nav.Item as="li" > <a onClick={this.toggle}>Coding</a> </Nav.Item>  
+	      <Nav.Item as="li" > <a onClick={this.toggle}>Coding</a> 
 	      
-	      {this.state.dropdown &&
-		      <Nav as="ul" onClick={this.toggle} >
+		      
+		      <Nav as="ul" onClick={this.toggle} style={{opacity:this.state.dropdown?1:0}} >
 		      	 <Nav.Item  as="li"><NavLink to="/casestudy">Case Study</NavLink></Nav.Item> 
 		      	 <Nav.Item  as="li"><NavLink to="/react/step">Widgets</NavLink></Nav.Item> 
 		      	 <Nav.Item  as="li"><NavLink to="/svg">SVG</NavLink></Nav.Item> 
 			  </Nav>
-		   }
-	    
-	      <Nav.Item  as="li"><NavLink to="/other">Other</NavLink></Nav.Item> 
+		   
+	          
+	      </Nav.Item>  
+	      
+
+	      <Nav.Item  as="li"><NavLink to="/other" onClick={this.off}>Hobbies</NavLink></Nav.Item> 
     </Nav>
     )
 }

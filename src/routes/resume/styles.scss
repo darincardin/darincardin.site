@@ -1,32 +1,48 @@
 
 
-	#home {
+
+
+
+
+[name=resume] {
+
+	[name=resume-border] {
+		text-align:center;
 		
-		background: red;
+		
 	}
 
-
-	section section {
+	 [name=resume-div] {
+		box-shadow: 3px 3px 10px 3px rgb(0 0 0);
+		border: solid #5e5e5e 1px;
+		margin-top: 20px;
 		margin-bottom: 20px;
-		
-		@media screen and  (min-width : 541px) {
-			margin-left: 30px;
-		}  		
+		color: #565656;
+		padding:40px;
+		background:white;
+		max-width: 900px;
+		display: inline-block;
+		text-align: left;
 	}
 
-	ol, ul {
-		margin-top: 0;
-		margin-bottom: 0px;
-		padding-left: 20px;
-		
-		@media screen and  (min-width : 541px) {
-			margin-left: 46px;
-		}  		
-		
+	h5 {
+		margin: 0;
+	    font-size: 20px;
 	}
-
-
-
-
 	
+	td{
+		
+		vertical-align: top;
+	   
+	    padding: 5px 20px 10px 20px;
+	    font-weight: 400;
+	    font-size: 16px;
+	
+		&:nth-child(1) {
+			 white-space: nowrap;
+		}
+	}
+		
+	
+}
 
