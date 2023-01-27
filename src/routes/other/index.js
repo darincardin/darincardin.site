@@ -24,7 +24,7 @@ class Other extends Component {
 	render(){
 		return (
 			<div name="other" className="animated fadeIn">
-			    <img name="background-image" src="assets/lizard.jpg" />
+			    <img name="background-image" src="assets/photos/lizard.jpg" />
 				<div className="container-fluid">
 					<div className="row">
 					    <div className="col-4 d-none d-sm-block"></div>

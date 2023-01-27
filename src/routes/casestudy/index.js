@@ -21,7 +21,7 @@ var CaseStudy = props => {
 
 								 
 							</div>
-							<ImgLoad width="300px" height="225px" className="photo" src="assets/x-church.jpg" />
+							<ImgLoad width="300px" height="225px" className="photo" src="assets/photos/x-church.jpg" />
 									
 							
 							<h3>The Problem</h3>

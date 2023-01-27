@@ -52,7 +52,7 @@ var Home = props => {
 			<div  name="home" className="animated fadeIn" >
 			
 			
-				<img  name="background-image" src="assets/home1.jpg" />
+				<img  name="background-image" src="assets/photos/home1.jpg" />
 				<div className="container-fluid"   >
 				   <div className="row ">
 				
