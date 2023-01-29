@@ -27,7 +27,7 @@ class	Widget extends Component {
 	]
 
 	render = ()=>(
-		<div style={{ padding: '0 10px', margin:'auto', maxWidth:'450px'}}>
+		<div>
 			<Form  object={this.state.object} fields={this.fields} onSuccess={this.onSuccess} >
 				<button type="submit" className="btn btn-primary">Submit</button> 
 			</Form>

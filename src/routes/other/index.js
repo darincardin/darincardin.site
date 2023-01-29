@@ -25,17 +25,17 @@ class Other extends Component {
 		return (
 			<div name="other" className="animated fadeIn">
 			    <img name="background-image" src="assets/photos/lizard.jpg" />
-				<div className="container-fluid-sm">
+				<div className="container-fluid g-0">
 					<div className="row">
-					    <div className="col-4 d-none d-sm-block"></div>
+			
 					
-						<div className="col-12 col-sm-8">
+						<div className="col-12 col-sm-8 offset-sm-4 ">
 							<div name="card1">
 				
 								<h1>Hiking</h1>
 								<hr class="short" />	
 								<p>
-									I'm an avid hiker, and have a <a className="lnk" target="_blank"  href="https://www.youtube.com/user/darincardin" >uTube</a> channel that follows my trips to different wilderness locations across the
+									I'm an avid hiker, and have a uTube channel called <a className="lnk" target="_blank"  href="https://www.youtube.com/user/darincardin" >Amateur Survival</a> that follows my trips to different wilderness locations across the
 									country. While on these trips, I demonstrate survival techniques that may be effective if you were ever lost.
 									The techniques range from improvised fire making to edible cacti.
 								</p>										

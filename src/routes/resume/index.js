@@ -22,32 +22,22 @@ import './styles.scss';
 			</section>		
 		</>						
 	)
-	
-
-
 
 	var Experience = props => {
 		
 		return (
-					<tr>
-						<td >	
-							<h5>{props.name}</h5>
-							{props.title}
-						</td>
-						<td>
-							{props.children}
-						</td>
-					</tr>				
+			<tr>
+				<td class="d-none d-sm-block">
+					<h5>{props.name}</h5>
+					{props.title}
+				</td>
+				<td>
+					<h5  class="d-block d-sm-none">{props.name}</h5>
+					{props.children}
+				</td>
+			</tr>				
 		)
 	}
-
-
-			
-
-			
-
-
-
 
 
 var Resume = props => {
@@ -56,17 +46,14 @@ var Resume = props => {
 		
 		<div  name="resume" className=" animated fadeIn" >
 
-				<div className="container" >
+				<div className="container-fluid g-0" >
 				
 						<div className="row">
 							<div className="col-xs-12">
-							<div name="resume-border">
-								<div name="resume-div">
+							<div name="card-center">
 								
 									<Summary />
 									
-							
-								
 									<section  className="experience">
 										
 										<h3>Experience</h3>    
@@ -150,7 +137,7 @@ var Resume = props => {
 									</section>
 									
 								</div>	
-							</div>	
+								
 							</div>	
 						</div>
 						

@@ -10,12 +10,10 @@ var Header =  props => {
 		return (
 			<header>
 
-			
-			
+	
+				<img  src="../assets/svg/name.svg" />
+	
 				
-
-			
-					<h1>Darin Cardin </h1>
 				
 				<Navigation />
 				

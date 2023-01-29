@@ -7,18 +7,28 @@ html, body, #app {
 	margin:0;
 	position:relative;
 	z-index:1;
-	min-width: 300px;
+	min-width: 260px;
+
+}
+
+
+#app {
+	
+
 }
 
 main {
 	display: block;
 	position:relative;
-    min-height: calc(100% - 105px);
+	overflow: none;
+    min-height: calc(100% - 110px);
 	transition: all .5s;
 }	
 
 
 	
+	
+
 
 
 	 li:has( a.active) {
@@ -70,56 +80,63 @@ main {
 		z-index: 1;	
 		box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 83%);
 		background: white;
-		min-width: 300px;
+		min-width: 260px;
+		
+		@media only screen and (max-width: 575px) {	
+			
+			padding: 5px;
+			margin: 7px 0!important;			
+			
+			ul {
+				padding-left: 17px;
+			}
+		}
+
+}
+
+
+	
+
+/** centered **/
+[name=card-center] {
+	margin-left: auto!important;
+	margin-right: auto!important;
+	max-width: 700px;
 }
 
 
 /** no padding***/
-[name=card2] {
-		padding:0;	
+[name=card-no-border] {
+		padding:0!important;	
     	display: inline-block;
     	max-width: 500px;	
 }
 
-[name=card3] {
+[name=card-multipanel] {
+	    background: linear-gradient(90deg, white 0%, white 50%, #a6a6a6 0%, #cecece 50%, #bababa 100%);
 		text-align:left;
 		
 		z-index: 1;
 	    display: inline-block;
 	    width:100%;
 		max-width: 800px;
-		padding:0;
+		padding:0!important;
 		
 		&>div {
 			padding:10px;
 			display: inline-block;
 		    vertical-align: top;
     		width: 50%;
-    		
-    		&:nth-child(2) {
-	           background: linear-gradient(45deg, #a6a6a6 0%, #cecece 50%, #bababa 100%);
-			}
 		}
+		
+		@media only screen and (max-width: 575px) {	
+			padding: 3px;
+		}	
 }
 
-[name=card4] {
-	margin-top: 20px!important;
-	
-}
-
 
 	
-@media only screen and (max-width: 767px) {	
-	
-	[name*=card] {
-		padding: 5px;
-		margin: 0px 0!important;	
-	}
-	
-	
-	
-}
-	
+
 	
 
 
@@ -204,9 +221,15 @@ img {
 	
 .step-bar {
 	
+	z-index: 10000;
+	
 	ul li {
 		color: black!important;
 	}
+	
+	
+
+		    
 	
 	
 	.step-highlight {
@@ -214,6 +237,17 @@ img {
 	}	
 }
 
+@media only screen and (max-width: 767px) {		
+		.tokenizer {
+			
+			input {
+				display:block!important;
+				width:100%!important;
+			}
+		}
+		
+
+}		
 	
 
 	

@@ -11,9 +11,9 @@ var CaseStudy = props => {
 		<>
 		
 			<div  name="casestudy" className="animated fadeIn" >
-				<div  className="container-fluid">
+				<div  className="container-fluid g-0">
 				
-					<div name="card " style={{'max-width':'700px'}}>
+					<div name="card-center" >
 						<div  class="row" >
 						
 								<div class="col-12">
@@ -66,8 +66,8 @@ var CaseStudy = props => {
 							
 												<h3>Demo Links</h3>
 												<ul>
-													<li><a target="_blank" href="http://demo.darincardin.site">Order Form </a> </li>
-													<li><a target="_blank" href="http://demo.darincardin.site/login.html">Admin Panel</a></li>
+													<li><a target="_blank" href="http://demo.darincardin.infinityfreeapp.com/">Order Form </a> </li>
+													<li><a target="_blank" href="http://demo.darincardin.infinityfreeapp.com/login.html">Admin Panel</a></li>
 												</ul>
 									
 								</div>

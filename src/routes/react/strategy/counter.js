@@ -37,11 +37,11 @@ class Widget extends Component{
 
 
 	render = () => (
-		<div style={{width:'100%', 'min-width': '200px', position: 'relative', zIndex:'5', borderRadius: '5px', padding: '20px', margin:'20px auto'}}>
+		<div>
 			<div class="counter" />
 			
-			<button onClick={this.toggleIncrement} className="btn btn-secondary" style={{width:'160px'}}>
-				{this.state.increment?"Disable":" Enable"} Increment
+			<button onClick={this.toggleIncrement} className="btn btn-secondary" style={{width:'100px'}}>
+				{this.state.increment?"Stop":"Increment"} 
 			</button> &nbsp;
 			
 			<button onClick={this.clear}  className="btn btn-secondary" >Clear</button> &nbsp;

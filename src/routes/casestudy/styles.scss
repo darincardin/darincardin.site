@@ -4,11 +4,6 @@
 [name=casestudy] {
 	
 
-		xxpadding: 10px;	
-	    xxmax-width: 900px;
-	    xxmargin: 0 auto;
-
-
 		[name=img]  {
 			float: right;
 		}
@@ -18,6 +13,12 @@
 
 @media only screen and (max-width: 767px) {	
 	[name=casestudy] {
+		
+		h1 {
+			font-size: 20px!important;
+			
+		}
+		
 		[name=img]  {
 			display:none;
 		}

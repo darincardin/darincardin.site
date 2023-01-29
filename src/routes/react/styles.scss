@@ -8,16 +8,31 @@
 	}
 	
 
-	[name=card3] {
-			a {
+	[name=card-multipanel] {
+		
+		div:nth-child(2) {
+				
+				
+				&>div {
+					
+					padding:30px; 
+					padding:30px 0;
+					max-width:300px;
+					margin:auto;
+				}
+			
+			
+		}
+		
+		
+		
+		a {
 				position: absolute;
    				bottom: 10px;
-			}	
+		}	
 	}	
+	
+	
+	
 }
 
-
-[name=imgA], [name=imgB]{
-	width: 150px!important;
-	height: 118px!important;
-}

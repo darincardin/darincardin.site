@@ -22,7 +22,7 @@ class Widget  extends Component{
 	}
 	
 	render = ()=>(
-		<div style={{width:'100%',  margin:'20px auto'}}>
+		<div>
 			
 			<br />
 			<Tokenizer  tokens={this.state.tokens} setState={this.change} /> 	

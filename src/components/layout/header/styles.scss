@@ -3,14 +3,19 @@
 header {
 	background:white;
 	border-bottom: 2px solid black;
-	height: 70px;
+	height: 75px;
+	
 
+    
+    
 
-			
-	h1{	
-	    padding: 10px;;
+    
+	img{	
+		display:inline-block;
+		
 		z-index: 2;
-		display: inline-block;
+
+		vertical-align: top;
 	}
 	
 	&>ul{
@@ -66,21 +71,25 @@ header {
 }
 
 
+@media only screen and (max-width: 700px) {	
+		
 
-@media only screen and (max-width: 500px) {	
+	
+}
+
+
+@media only screen and (max-width: 700px) {	
 	
 		
 	header{ 
-		text-align: center;
 		
-		h1 {
-			
-			padding:0;
-			margin:0;		
-		}
+			img {
+				height:44px;
+				margin: 2px 0;
+			}
 			
 		&>ul {		
-			float: none;		
+			text-align:left!important;		
 			height:auto;	
 			
 			&>li{

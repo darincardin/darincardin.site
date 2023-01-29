@@ -12,13 +12,13 @@ var Coding = props => {
 	return (
 		
 			<div  name="coding" className="animated fadeIn" >
-				<div  className="container">
+				<div  className="container-fluid g-0">
 					<div className="row">
 						<div className="col-xs-12 " style={{textAlign:'center'}}>
 
 								{StrategyList.map(w=>(	
 						
-									<div name="card3">					
+									<div name="card-multipanel">					
 											<div>
 												<h3>{w.title}</h3>
 												<hr class="short blue" />

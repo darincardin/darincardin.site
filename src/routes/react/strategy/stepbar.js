@@ -15,9 +15,9 @@ class Widget extends Component{
 		this.setState({step: next});
 	
 	}	
-	
+
 	render = () => (
-		<div style={{ padding: '30px'}}>
+		<div >
 			<StepBar index={this.state.step} array={this.array} />
 			<br />
 		
