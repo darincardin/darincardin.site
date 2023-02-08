@@ -21,7 +21,7 @@ var Coding = props => {
 									<div name="card-multipanel">					
 											<div>
 												<h3>{w.title}</h3>
-												<hr class="short blue" />
+												<hr class="short" />
 												
 												<div dangerouslySetInnerHTML={{ __html: w.text }} />
 												<a target="_blank" href={w.url} >GitHub</a>												

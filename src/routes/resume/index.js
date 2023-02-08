@@ -28,8 +28,8 @@ import './styles.scss';
 		return (
 			<tr>
 				<td class="d-none d-sm-block">
-					<h5>{props.name}</h5>
-					{props.title}
+					<h5>{props.title}</h5>
+					{props.date}
 				</td>
 				<td>
 					<h5  class="d-block d-sm-none">{props.name}</h5>
@@ -58,30 +58,27 @@ var Resume = props => {
 										
 										<h3>Experience</h3>    
 										<table>
-											<Experience name="Saint Paul's Church" date="1 year" address="884 Kempton St, New Bedford, MA" title="Full Stack Developer"  >
+											<Experience name="" date="1 year" address="" title="Full Stack Developer"  >
 										
 												<div>
-													Worked as a freelancer; developed a website that accepted orders for a fundraiser. 
-													Site included an order form for the customer and an admin panel for the super user. 
-													Website went live and processed roughly $3,000 worth of orders.
+											Developed a website that accepted orders for a fundraiser; included an administration section where orders could be viewed, edited or deleted
 												</div>
 												<ul>   
 													<li>Developed website using React, PHP and MySQL</li>
 													<li>Built application using NodeJS, Webpack and Babel </li>
 													<li>
-														Demo application 
-														at <a href="http://demo.darincardin.infinityfreeapp.com" target="_blank" >http://demo.darincardin.infinityfreeapp.com</a> 
-													 </li>
+														 <a target="_blank" href="http://demo.darincardin.site">Order Form Demo</a>		
+														 &nbsp; &nbsp;
+														 <a target="_blank" href="http://demo.darincardin.site/login.html">Admin Page Demo</a>
+													</li>
 												</ul>
 											</Experience>
 																			
 																			
-											<Experience name="Soteria Networks" date="2 years" address="190 North Main St, Natick, MA" title="Web Developer" >
+											<Experience name="" date="2 years" address="" title="Web Developer" >
 										
 												<div>
-													Worked at an eight person company; developed an online inventory application for a Chinese metal cutting company (XDC Industries). 
-													Users would login through an SSO and be granted access to different areas of the site depending on their permissions. 
-													Users would create/edit/assign objects that corresponded to their cutting workshop.
+						Developed an online inventory application for a Chinese metal cutting company; application allowed tools to be registered, reserved and reordered from a central location; system included an IAM component to manage users
 												</div>
 												<ul>   
 													<li>Coded the front-end using Angular 10,  Spring Boot, MySQL and Docker</li>
@@ -93,12 +90,10 @@ var Resume = props => {
 											</Experience>							
 			
 			
-											<Experience name="Altisource Labs" date="2 years" address="321 Summer St, Boston, MA" title="Web Developer" >
+											<Experience name="" date="2 years" address="" title="Web Developer" >
 											
 												<div>
-													Worked as part of a six person team; developed an Identity and Access Management web application. 
-													Users would login via a Shibboleth SSO and be redirect to one of several online tools. 
-													Super users could create new users and assign them permissions.
+							Built an Identity and Access Management web application that granted access to our other products; users would be created and granted permissions based on their needs
 												</div>
 												<ul>   
 													<li>Coded website using AngularJS, Kendo, Bootstrap and CSS </li>
@@ -110,9 +105,11 @@ var Resume = props => {
 	
 	
 	
-											<Experience name="Microsoft" date="5 years" address="1 Memorial Drive, Cambridge, MA" title="Web Developer" >
+											<Experience name="" date="5 years" address="" title="Web Developer" >
 											
-												<div>Worked as part of a twelve person team; developed the web tier of an online system that auctioned television commercial space</div>
+												<div>
+												Developed the web tier of an online system that auctioned television commercial space; users would bid on commercial slots based on the criteria they selected (target audience, price, time)
+												</div>
 												<ul>   
 													<li>Developed code using Java/JSP, Struts, JSTL, JQuery, CSS, and HTML </li>
 													<li>Experience with Agile; participated in estimation, development and testing phases of project</li>
@@ -126,7 +123,7 @@ var Resume = props => {
 									<section name="education">
 										<h3>Education</h3>  
 										<table>
-											<Experience name="UMass Dartmouth" date="8 years" >
+											<Experience title="UMass Dartmouth" date="8 years" >
 										
 												<ul>   
 													<li>BA in Computer Science </li>

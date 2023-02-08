@@ -6,6 +6,7 @@ if(typeof window !== "undefined") window.jQuery = window.$ = require('jquery');
 var $ = require('jquery'); 
   
 
+
 import App from './components/app';
 
 import Layout from './components/layout';
@@ -33,7 +34,8 @@ class Main extends Component {
 				
 				Promise.all([
 					import ( './style/validation.scss'),
-					import ( './style/tooltip.css')		
+					import ( './style/tooltip.css')	
+					
 				]).then(()=>{})	
 				
 			})

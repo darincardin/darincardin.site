@@ -6,14 +6,21 @@ var SVG = props => {
 
 	return (
 		
-			<div name="svg" className="animated fadeIn svg" >
-				<div  className="container-fluid g-0 ">
-					<div className="row">
+		
+				<div  name="svg"   className="container-fluid g-0 ">
+					<div className="row g-0">
 						<div className="col-xs-12 ">
 						
 							<div style="text-align:center;">
 
-
+								<div name="card-center" style="text-align: left;">	
+									<h3>SVG</h3> 
+									<hr class="short"/>
+								
+								
+									Below are several animated SVG images I have created for various projects.
+								
+								</div>
 
 										
 								<div name="card-no-border">					
@@ -48,7 +55,7 @@ var SVG = props => {
 						
 						
 				</div>
-			</div>
+
 		
 	);
 }

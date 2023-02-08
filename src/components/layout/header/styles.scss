@@ -1,20 +1,18 @@
 
 
+
+
 header {
 	background:white;
 	border-bottom: 2px solid black;
 	height: 75px;
+	min-width: 175px;
+	position:relative;
+	z-index: 2;
 	
-
-    
-    
-
-    
 	img{	
-		display:inline-block;
-		
+		display:inline-block;	
 		z-index: 2;
-
 		vertical-align: top;
 	}
 	
@@ -31,18 +29,24 @@ header {
 			height:inherit;
 			padding: 0;
 		
+			 &:has([aria-current]) {
+				background: linear-gradient(0deg,#ffffff00,#b2abf7 35%,#b2abf7 65%,#ffffff00)!important;
+			 } 
+		
+		
 			a {
+				cursor:pointer;
 				user-select: none;
 				color:  black!important;
 				text-decoration: none!important;
 				height: inherit;
 				line-height: 60px;
 				display: inline-block;
-				padding: 0 10px;
+				padding: 0 8px;
 			}	
 			
 			
-			&>ul { /* Sub nav */
+			&>ul { 
 				padding: 10px 0;
 				border: solid #636363 1px;
 	    		width: 150px;
@@ -84,8 +88,8 @@ header {
 	header{ 
 		
 			img {
-				height:44px;
-				margin: 2px 0;
+				height:43px;
+				margin: 3px 0;
 			}
 			
 		&>ul {		
@@ -97,7 +101,7 @@ header {
 				padding:0;
 				a {
 					font-size: 16px;	
-					padding: 0 8px;
+					padding: 0 6px;
 					line-height: 24px!important;	
 				}	
 			

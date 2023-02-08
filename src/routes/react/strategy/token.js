@@ -24,11 +24,11 @@ class Widget  extends Component{
 	render = ()=>(
 		<div>
 			
-			<br />
+			Enter token:
 			<Tokenizer  tokens={this.state.tokens} setState={this.change} /> 	
 			<br />
-			<br />
-			<button onClick={this.submit} className="btn btn-primary">Submit</button>
+			
+			<button onClick={this.submit} className="btn btn-primary">Report Tokens</button>
 		</div>
 	)
 }

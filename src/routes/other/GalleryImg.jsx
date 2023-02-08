@@ -14,7 +14,7 @@ var GalleryImg = props =>{
 
 
 		return (		
-			<ImgLoad className="gallery_item" height="66px" width="100px" src={path.small} href={path.normal}   />  	
+			<ImgLoad name="gallery-image" height="59px" width="90px" wait="1" src={path.small} href={path.normal}   />  	
 		)
 }
 

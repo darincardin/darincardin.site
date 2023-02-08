@@ -1,21 +1,30 @@
 
 
-html, body, #app {
+html {
 	font-family: Calibri, Arial;
 	font-size: 17px;
 	height:100%;
 	margin:0;
 	position:relative;
 	z-index:1;
-	min-width: 260px;
-
+	min-width: 255spx;
+    overflow-x: hidden;
+    color: black;
 }
 
-
-#app {
-	
-
+body {
+	position:relative;
+	z-index:1;	
+	height:100%;
 }
+
+html, body, #app{ margin:0;height:100%; }
+		
+#app{
+			position:relative;
+				z-index:1;
+}
+
 
 main {
 	display: block;
@@ -25,16 +34,6 @@ main {
 	transition: all .5s;
 }	
 
-
-	
-	
-
-
-
-	 li:has( a.active) {
-
-		background: #1400e754!important;
-	 } 
 
 
 
@@ -52,31 +51,27 @@ main {
 
 [name=background-image] {
 		top:0;
-		bottom:0;
 		left:0;
-		right:0;
-		min-width: 1000px;
 		z-index:-1;
-		position: fixed;
-    	opacity: 1!important;
-		width: 100%;				
+		position: fixed!important;
+		width: 100%;
 }
-  
-
 
 
 /*************** CARDS ***********************************/
 
 [name*=card] {
 		line-height: 23px;
-    	font-size: 18px;
+    	font-size: 16px;
     	font-weight: 200;	
     	
+  
+	
 	    border: solid #5e5e5e 1px;
 	
 		margin: 30px 10px 10px 10px!important;
 		position: relative;
-		padding: 20px 40px;
+		padding: 20px 30px;
 		z-index: 1;	
 		box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 83%);
 		background: white;
@@ -127,6 +122,8 @@ main {
 			display: inline-block;
 		    vertical-align: top;
     		width: 50%;
+    		
+    		&:first-child { padding-bottom:40px;}
 		}
 		
 		@media only screen and (max-width: 575px) {	
@@ -149,16 +146,19 @@ main {
 
 
 	h1 {
-			color: #0000a5;
+	
 			font-size: 36px!important;
+   			text-shadow:  1px 2px 0px #0000007a;
+    		color: #000000;  			
+			transition: all .5s;
 	}
 	
 	hr {
-		border: #0000a5!important;
-		background: #0000a5!important;
+		border: #6c6cc8!important;
+		background: #6c6cc8!important;
 		font-size: 30px!important;
     	margin: 0px 0 0px 0px!important;			
-	    border-top: 1px solid #d7d7d7;
+	    border-top: 1px solid #6c6cc8;
 	}
 
 
@@ -187,11 +187,12 @@ main {
 h3{
     font-weight: 800;
     margin: 20px 0 5px 0px!important;	
-    
+    text-shadow:  1px 2px 0px #0000007a;  
 }
 
 h4{
 	font-size:18px;
+	text-shadow:  1px 2px 0px #0000007a;
 }
 			
 		
@@ -210,14 +211,39 @@ img {
 
 
 	
-@media only screen and (max-width: 767px) {		
+@media only screen and (max-width: 800px) {		
 		main{ margin-right: 0px; }	
+		
+		
+		h1 {
+			font-size: 23px!important;
+		}
 }		
 	
 
 	
 /*********************** WIDGETS ******************/
 	
+form {
+	
+	hr{
+		border: solid black 1px!important;
+	}
+}	
+	
+.xxxasync-image {
+	margin:2px;
+	vertical-align:top;
+	display:inline-block;  
+	border:solid grey 1px;
+	
+	
+	span {
+		xxxdisplay:inline-block;
+		xxxopacity: 0;
+	}
+	
+}	
 	
 .step-bar {
 	
@@ -226,11 +252,6 @@ img {
 	ul li {
 		color: black!important;
 	}
-	
-	
-
-		    
-	
 	
 	.step-highlight {
 		 z-index: 0!important;
@@ -246,7 +267,12 @@ img {
 			}
 		}
 		
-
+		form {
+			
+			hr {
+				border:solid black 1px!important;
+			}
+		}
 }		
 	
 

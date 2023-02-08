@@ -43,7 +43,7 @@
 				
 				
 	
-			#tree1{
+			[id*=tree]{
 				animation: tree 7s  infinite linear ; 				
 				animation-fill-mode: forwards;
 				
@@ -53,19 +53,13 @@
 			}
 
 			#tree2{
-				animation: tree 7s  infinite linear ; 				
-				animation-fill-mode: forwards;
-				animation-delay: 0.3s;
-				
-		        transform: rotate(0deg); 
-		        transform-origin: 81px 71px;
-		        transform-origin: 500px 85px;
+				animation-delay: 1s;
 			}
 
 
 			@keyframes tree {
 			  0% {  transform: rotate(0deg); }
-			  50% {     transform: rotate(-3deg);  }
+			  50% {     transform: rotate(-5deg);  }
 			   68% {     transform: rotate(1deg);  }
 			  75% {     transform: rotate(0deg);  }
 			  100% {     transform: rotate(0deg);  }

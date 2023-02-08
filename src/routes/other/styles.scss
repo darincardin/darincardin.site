@@ -1,13 +1,11 @@
 [name=other] {
 
 
-
-	
-	 img{
-		opacity: .7;
-		transition: opacity .4s;
-		&:hover {	opacity:1; }
+	[name=gallery-image] {
+		margin: 0 3px;
 	}
+	
+
 	
 }
 

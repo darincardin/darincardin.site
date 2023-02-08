@@ -24,15 +24,34 @@
 				stroke:black;
 				animation: title 5s; 				
 				animation-fill-mode: forwards;
-				animation-delay:1s;
-			
+				animation-delay:1s;			
 			}
+			
+			[id*=line] {
+				transform: translate(-500px,0px);
+				animation: move .05s; 				
+				animation-fill-mode: forwards;			
+			}
+			
+			
+			#line1 { animation-delay:1s;	}
+
+			#line2 { animation-delay:2s;	}
+			
+			@keyframes move {
+			    0% {transform: translate(-500px, 0px) }    
+				100% { transform: translate(0px,0px) }  
+			}			
+					
 			
 			@keyframes title {
 			  0% { stroke-dasharray: 100; fill-opacity:0; stroke-opacity:0;}
 			  20% {stroke-opacity:1;}
 			  100% {   stroke-dasharray: 1000; fill-opacity:1;  stroke-opacity:1;}
 			}	
+		
+		
+
 		
 </style>
    
@@ -45,13 +64,13 @@
    transform="matrix(0.21883892,0,0,0.31804643,-4.0190596,-7.1665302)">
    
    <path
-   id="path5074"
+   id="line1"
    style="display:inline;fill:#9191c4;fill-opacity:1;stroke:#000000;stroke-width:0.126767;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:12.2;stroke-dashoffset:37.7953;paint-order:markers stroke fill"
    d="M 18.428723,57.279324 489.05411,57.501109 56.829166,68.265013 37.628945,62.772168 Z" />
 	 
 	 
 	 <path
-   id="path5072"
+   id="line2"
    style="display:inline;fill:#8888d6;fill-opacity:1;stroke:#000000;stroke-width:0.0743322;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:12.2;stroke-dashoffset:37.7953;paint-order:markers stroke fill"
    d="M 27.761822,70.287982 297.52628,68.328396 H 469.00571 L 97.78473,77.628951 Z" />
    

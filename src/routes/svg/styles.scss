@@ -1,6 +1,16 @@
 
 	[name=svg] {
 		
+		h3{
+			margin: 0!important;
+		}
+		
+		[name*=card] {
+			
+			max-width: 500px;;
+		}
+		
+		
 		img {
 			width: 100%;
 			
