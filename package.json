@@ -19,6 +19,7 @@
     ]
   },
   "devDependencies": {
+    "counter": "darincardin/counter",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
@@ -26,16 +27,16 @@
     "form": "darincardin/form",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
+    "loadimage": "darincardin/loadimage",
     "preact-cli": "^3.0.0",
     "sass": "^1.54.8",
     "sass-loader": "^7.3.1",
     "sirv-cli": "1.0.3",
     "stepbar": "darincardin/stepbar",
-    "tokenizer": "darincardin/tokenizer",
-    "counter": "darincardin/counter",
-    "loadimage": "darincardin/loadimage"
+    "tokenizer": "darincardin/tokenizer"
   },
   "dependencies": {
+    "async-image": "github:darincardin/loadimage",
     "bootstrap": "5.2",
     "jquery": "^3.4.1",
     "jquery.touch": "1.0.0",

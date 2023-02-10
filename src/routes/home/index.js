@@ -59,7 +59,7 @@ class Home extends Component {
 		
 			<div  name="home" className="animated fadeIn" >
 			
-			    <ImgLoad name="background-image" wait={Home.loaded?0:4}   style="transition: 'opacity 100s';" src="assets/photos/home1.jpg"   />  
+			    <ImgLoad name="background-image" wait={Home.loaded?0:4}   src="assets/photos/home1.jpg"   />  
 			    
 			 				
 				<div className="container-fluid g-0"   >

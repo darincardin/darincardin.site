@@ -3,20 +3,14 @@ import {Component} from "preact";
 import './styles.scss';
 
 
-import GalleryImg from './GalleryImg.jsx'
+import Gallery from './Gallery.jsx'
 import ImgLoad from '../../components/common/loadimage/ImgLoad.jsx'   
-
-//import 'jquery.touch/jquery.touch.js'
-
 
 
 class Other extends Component {
 
 	static loaded = false;
 
-	gallery = ['bird', 'birds', 'birds2','cat','clouds','duck','gator','hawk','lily1','lily2','lily3',
-	           'lizard','moon','pink1','pink3','rabbit','red1','rocks','sea','stork','street',
-	           'suncactus','sunset', 'yucca'];
 
 
 
@@ -59,9 +53,7 @@ class Other extends Component {
 										Here are some samples of my work.
 								</p>
 								<div>
-										{this.gallery.map((v, i)=>
-											<GalleryImg key={i} file={v} />
-										)}
+									<Gallery  />
 								</div>												
 															
 							</div>
