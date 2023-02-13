@@ -11,18 +11,23 @@ class Other extends Component {
 
 	static loaded = false;
 
-
-
-
 	componentDidMount(){
 		Other.loaded = true;
 	}
 	
 	render(){
+		
+		var style ={
+			height:'auto',
+			width: 'auto',
+			transition: `opacity ${Other.loaded?0:4}s`
+		}
+		
+		
 		return (
 			<div name="other" className="animated fadeIn">
 			
-			    <ImgLoad name="background-image" wait={Other.loaded?0:4}  src="assets/photos/lizard.jpg" />
+			    <ImgLoad name="background-image" style={style}  src="assets/photos/lizard.jpg" />
 			    
 				<div className="container-fluid g-0">
 					<div className="row">

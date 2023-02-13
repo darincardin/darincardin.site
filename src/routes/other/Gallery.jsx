@@ -13,13 +13,17 @@ var Gallery = props =>{
 	           'suncactus','sunset', 'yucca'];
 
 	
+	var style ={
+		height:'66px',
+		width: '100px',
+		transition: `opacity 1s`
+	}
+	
 
 	return (	
 		<div>
 			{gallery.map((v, i)=>
-			<ImgLoad name="gallery-image" height="66px" width="100px" wait="1" src={`/assets/photos/small/${v}.jpg`} href={`/assets/photos/small/${v}.jpg`}   />  							
-
-			
+				<ImgLoad name="gallery-image" style={style} src={`/assets/photos/small/${v}.jpg`} href={`/assets/photos/normal/${v}.jpg`}   />  							
 			)}
 		</div>	
 	)

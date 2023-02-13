@@ -14,16 +14,16 @@ class ImgLoad extends Component{
 	componentDidMount(){     
 		
 		var style = {
-			transition:`opacity ${this.props.wait}s`,
-			height: `${this.props.height}`,
-			width: `${this.props.width}`,
+		///	transition:`opacity ${this.props.wait}s`,
+		//	height: `${this.props.height}`,
+		//	width: `${this.props.width}`,
 		}
 
-        $(this.elem.current).loadimage( style );
+        $(this.elem.current).loadimage( this.props.style );
 	}
 
 	render() {
-		return ( <div ref={this.elem} name={this.props.name} src={this.props.src} ></div> );
+		return ( <div ref={this.elem} name={this.props.name} src={this.props.src} href={this.props.href}></div> );
 	}
 }
 

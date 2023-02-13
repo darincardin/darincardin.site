@@ -10,10 +10,6 @@ class Home extends Component {
 
 	static loaded = false
 
-	constructor(props){
-		super(props)
-	}
-
 	componentDidMount(){
 		Home.loaded = true;
 	}
@@ -51,15 +47,25 @@ class Home extends Component {
 		</div>
 	)
 
+		
+
+
 	render = ()=> {
 		var Skill = this.Skill;
+
+		var style ={
+			height:'auto',
+			width: 'auto',
+			transition: `opacity ${Home.loaded?0:4}s`
+		}
+		
 		
 		return (
 		
 		
 			<div  name="home" className="animated fadeIn" >
 			
-			    <ImgLoad name="background-image" wait={Home.loaded?0:4}   src="assets/photos/home1.jpg"   />  
+			    <ImgLoad name="background-image" style={style}  src="assets/photos/home1.jpg"   />  
 			    
 			 				
 				<div className="container-fluid g-0"   >
