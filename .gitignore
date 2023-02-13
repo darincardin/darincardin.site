@@ -4,6 +4,7 @@ node_modules
 org.eclipse.*
 .jsdtscope*
 .project
+.settings
 package-lock.json
 /src/assets/photos/*
 
