@@ -1,8 +1,8 @@
 import {Component} from "preact";
 import React from "react";
 
-import 'loadimage/dist/js/loadimage.js';
-import 'loadimage/dist/css/loadimage.css';
+import 'jquery-plugins/loadimage/dist/js/loadimage.js';
+import 'jquery-plugins/loadimage/dist/css/loadimage.css';
 
 class ImgLoad extends Component{
 
@@ -12,13 +12,6 @@ class ImgLoad extends Component{
 	}
 
 	componentDidMount(){     
-		
-		var style = {
-		///	transition:`opacity ${this.props.wait}s`,
-		//	height: `${this.props.height}`,
-		//	width: `${this.props.width}`,
-		}
-
         $(this.elem.current).loadimage( this.props.style );
 	}
 

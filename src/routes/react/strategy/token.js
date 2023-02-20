@@ -1,9 +1,7 @@
 import { Component } from 'preact';
 
-//import Tokenizer from '../../../components/common/tokenizer/src/Tokenizer/Tokenizer.jsx'; 
 
-import Tokenizer from 'tokenizer/dist/react/index.js'; 
-
+import Tokenizer from 'react-widgets2/tokenizer';
 
 class Widget  extends Component{
 	
@@ -11,24 +9,25 @@ class Widget  extends Component{
 	
 	t = ['ddddd']
 	
-
-	
 	change = (obj, next)=>{
 		this.setState(obj, next);
 	}	
 	
 	submit = ()=>{
 		alert(this.state.tokens.join(', '))
+	//	
 	}
 	
 	render = ()=>(
 		<div>
 			
 			Enter token:
-			<Tokenizer  tokens={this.state.tokens} setState={this.change} /> 	
+			<Tokenizer  tokens={this.state.tokens} setState={this.change} >
+				<button className="btn btn-primary">Add</button>
+			</Tokenizer> 	
 			<br />
 			
-			<button onClick={this.submit} className="btn btn-primary">Report Tokens</button>
+			<button onClick={this.submit} className="btn btn-primary">Show Tokens</button>
 		</div>
 	)
 }

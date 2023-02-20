@@ -34,7 +34,9 @@ main {
 	transition: all .5s;
 }	
 
-
+button {
+	white-space: nowrap;
+}
 
 
 /*********************    BACKGROUND    *************************************/
@@ -122,14 +124,19 @@ main {
 			display: inline-block;
 		    vertical-align: top;
     		width: 50%;
+  
+			@media only screen and (max-width: 700px) {	
+				padding: 3px;
+	  		}
+
     		
     		&:first-child { padding-bottom:40px;}
 		}
 		
-		@media only screen and (max-width: 575px) {	
-			padding: 3px;
-		}	
+
 }
+
+
 
 
 	
@@ -231,20 +238,7 @@ form {
 	}
 }	
 	
-.xxxasync-image {
-	margin:2px;
-	vertical-align:top;
-	display:inline-block;  
-	border:solid grey 1px;
-	
-	
-	span {
-		xxxdisplay:inline-block;
-		xxxopacity: 0;
-	}
-	
-}	
-	
+
 .step-bar {
 	
 	z-index: 10000;
@@ -258,24 +252,36 @@ form {
 	}	
 }
 
-@media only screen and (max-width: 767px) {		
+
+
+
 		.tokenizer {
 			
 			input {
-				display:block!important;
-				width:100%!important;
+				width: 100%!important;
+				vertical-align:bottom;
+				
+				@media only screen and (max-width: 700px) {	
+	
+					& {
+						xxdisplay:block!important;
+						xxwidth:100%!important;
+					}			
+				}	
 			}
+
 		}
 		
 		form {
-			
-			hr {
-				border:solid black 1px!important;
-			}
+			hr { border:solid black 1px!important;}
 		}
-}		
-	
 
 	
+
+			.error-msg {
+			    font-weight: 600;
+			    text-shadow: 1px 1px 2px #00000045;
+			    background: transparent!important;
+			}
 			
 	

@@ -1,6 +1,6 @@
 import { Component } from 'preact';
-import Form from '../../../components/common/form/src/Form/Form.jsx'; 
 
+import Form from 'react-widgets2/form';
 
 const newOrder = { id:"1", name:"", phone:"", amount:"", deliver: false}
 

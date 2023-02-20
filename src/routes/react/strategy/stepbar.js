@@ -1,7 +1,8 @@
 import { Component } from 'preact';
 							
 
-import StepBar from 'stepbar';
+
+import StepBar from 'react-widgets2/stepbar/dist/index.js';
 
 
 
@@ -13,14 +14,12 @@ class Widget extends Component{
 	change = ()=>{
 		var next =  (this.state.step< this.array.length) ? ++this.state.step : 1;
 		this.setState({step: next});
-	
 	}	
 
 	render = () => (
 		<div >
 			<StepBar index={this.state.step} array={this.array} />
-			<br />
-		
+			<br />	
 			<button onClick={this.change} className="btn btn-primary">Next Step</button>
 		</div>
 	)

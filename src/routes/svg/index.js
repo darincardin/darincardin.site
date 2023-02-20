@@ -13,6 +13,9 @@ var SVG = props => {
 						
 							<div style="text-align:center;">
 
+
+
+
 								<div name="card-center" style="text-align: left;">	
 									<h3>SVG</h3> 
 									<hr class="short"/>
@@ -21,17 +24,17 @@ var SVG = props => {
 									Below are several animated SVG images I have created for various projects.
 								
 								</div>
-
-										
+								<div name="card-no-border">					
+									<img  src="../assets/svg/partouche.svg" />
+								</div>
+											<br />
 								<div name="card-no-border">					
 									<img  src="../assets/svg/rocket.svg" />
 								</div>
 								
-								<br />
+							
 								
-								<div name="card-no-border">					
-									<img  src="../assets/svg/partouche.svg" />
-								</div>
+
 									
 								<br />	
 								
