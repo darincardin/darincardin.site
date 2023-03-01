@@ -1,8 +1,8 @@
 import {Component} from "preact";
 import React from "react";
 
-import 'jquery-plugins/loadimage/dist/js/loadimage.js';
-import 'jquery-plugins/loadimage/dist/css/loadimage.css';
+import 'jquery-plugins1/dist/loadimage.js';
+import 'jquery-plugins1/dist/loadimage.css';
 
 class ImgLoad extends Component{
 

@@ -1,7 +1,6 @@
 import { Component } from 'preact';
 
-
-import Tokenizer from 'react-widgets2/tokenizer';
+import {Tokenizer} from 'react-widgets4';
 
 class Widget  extends Component{
 	

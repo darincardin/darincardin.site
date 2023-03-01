@@ -1,6 +1,6 @@
 import { Component } from 'preact';
 
-import Form from 'react-widgets2/form';
+import {Form} from 'react-widgets4';
 
 const newOrder = { id:"1", name:"", phone:"", amount:"", deliver: false}
 

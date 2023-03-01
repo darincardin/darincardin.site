@@ -1,8 +1,8 @@
 import { Component } from 'preact';
 
 
-import 'jquery-plugins/counter/dist/js/counter.js';
-import 'jquery-plugins/counter/dist/css/counter.css';
+import 'jquery-plugins1/dist/counter.js';
+import 'jquery-plugins1/dist/counter.css';
 
 
 class Widget extends Component{

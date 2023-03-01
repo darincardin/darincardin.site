@@ -1,8 +1,6 @@
 import { Component } from 'preact';
 							
-
-
-import StepBar from 'react-widgets2/stepbar/dist/index.js';
+import {StepBar} from 'react-widgets4';
 
 
 
