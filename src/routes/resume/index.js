@@ -67,9 +67,9 @@ var Resume = props => {
 													<li>Developed website using React, PHP and MySQL</li>
 													<li>Built application using NodeJS, Webpack and Babel </li>
 													<li>
-														 <a target="_blank" href="http://demo.darincardin.site">Order Form Demo</a>		
+														 <a target="_blank" href="https://demo.darincardin.site">Order Form Demo</a>		
 														 &nbsp; &nbsp;
-														 <a target="_blank" href="http://demo.darincardin.site/login.html">Admin Page Demo</a>
+														 <a target="_blank" href="https://demo.darincardin.site/login.html">Admin Page Demo</a>
 													</li>
 												</ul>
 											</Experience>

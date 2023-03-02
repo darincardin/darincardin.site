@@ -66,8 +66,8 @@ var CaseStudy = props => {
 							
 												<h3>Demo Links</h3>
 												<ul>
-													<li><a target="_blank" href="http://demo.darincardin.site">Order Form </a> </li>
-													<li><a target="_blank" href="http://demo.darincardin.site/login.html">Admin Panel</a></li>
+													<li><a target="_blank" href="https://demo.darincardin.site">Order Form </a> </li>
+													<li><a target="_blank" href="https://demo.darincardin.site/login.html">Admin Panel</a></li>
 												</ul>
 									
 								</div>
