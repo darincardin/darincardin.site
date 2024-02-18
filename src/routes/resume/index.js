@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './styles.scss';
 
 
@@ -27,12 +27,12 @@ import './styles.scss';
 		
 		return (
 			<tr>
-				<td class="d-none d-sm-block">
+				<td className="d-none d-sm-block">
 					<h5>{props.title}</h5>
 					{props.date}
 				</td>
 				<td>
-					<h5  class="d-block d-sm-none">{props.name}</h5>
+					<h5  className="d-block d-sm-none">{props.name}</h5>
 					{props.children}
 				</td>
 			</tr>				
@@ -58,6 +58,7 @@ var Resume = props => {
 										
 										<h3>Experience</h3>    
 										<table>
+										<tbody>
 											<Experience name="" date="1 year" address="" title="Full Stack Developer"  >
 										
 												<div>
@@ -116,6 +117,7 @@ var Resume = props => {
 													<li>Familiar with Eclipse, Firebug and Fiddler</li>
 												</ul>	
 											</Experience>		
+											</tbody>
 										</table>
 									</section>
 									
@@ -123,13 +125,15 @@ var Resume = props => {
 									<section name="education">
 										<h3>Education</h3>  
 										<table>
-											<Experience title="UMass Dartmouth" date="8 years" >
+											<tbody>
+											<Experience title="College" >
 										
 												<ul>   
 													<li>BA in Computer Science </li>
 													<li>Worked four years as an aide in the student computer labs (CITS Department) </li>
 												</ul>	
-											</Experience>			
+											</Experience>	
+											</tbody>		
 										</table>					
 									</section>
 									
@@ -140,36 +144,10 @@ var Resume = props => {
 						
 					</div>
 		</div>
-					
-		
-		
 
-		
-		
-		
-		
-		
-
-
-
-	
 	
 	);
 }
-
-/*
-			<div> <b>darinjaycardin@gmail.com</b> </div> 
-
-			<div> 
-				<a href="https://github.com/darincardin" target="_blank" >https://github.com </a> 
-			</div> 
-			<div> 
-				<a href="https://www.linkedin.com/in/darin-cardin-23545079" target="_blank" >https://www.linkedin.com </a> 
-			</div> 			
-	
-
-*/
-
 
 export default Resume;
 

@@ -1,4 +1,5 @@
-import {Component} from 'preact'
+import React from 'react';
+
 
 
 import  './styles.scss';
@@ -6,7 +7,7 @@ import  './styles.scss';
 import ImgLoad from '../../components/common/loadimage/ImgLoad.jsx'   
 
 
-class Home extends Component {
+class Home extends React.Component {
 
 	static loaded = false
 
@@ -16,7 +17,7 @@ class Home extends Component {
 
 	primary = [		
 		{name:'Angular', years:[1,1,1,1]},
-		{name:'React', years:[1]},
+		{name:'React', years:[1,1]},
 		{name:'JQuery', years:[1,1,1]},
 		{name:'NodeJS', years:[1,1,1]},		
 		{name:'Java', years:[1,1,1]},		
@@ -54,7 +55,8 @@ class Home extends Component {
 		var Skill = this.Skill;
 
 		var style ={
-			height:'auto',
+			'min-height':'792px',
+			height:'100%',
 			width: 'auto',
 			transition: `opacity ${Home.loaded?0:4}s`
 		}
@@ -65,7 +67,7 @@ class Home extends Component {
 		
 			<div  name="home" className="animated fadeIn" >
 			
-			    <ImgLoad name="background-image" style={style}  src="assets/photos/home1.jpg"   />  
+			    <ImgLoad name="background-image" style={style} alt="Darin Cardin" src="assets/photos/home1.jpg"   />  
 			    
 			 				
 				<div className="container-fluid g-0"   >
@@ -76,8 +78,8 @@ class Home extends Component {
 								<div className="row ">
 									<div className="col-12">
 									
-										<h1 class="short">About Me</h1>
-										<hr class="short" />
+										<h1 className="short">About Me</h1>
+										<hr className="short" />
 										<p> 
 									
 											Hi, my name is Darin Cardin, and this is my personal website.
@@ -98,13 +100,13 @@ class Home extends Component {
 								<div className="row ">
 									<div className=" col-12 col-md-4 ">
 										<h1>Skills</h1>
-										<hr class="short" />
+										<hr className="short" />
 										<Skill/>							
 									</div>
 									
 									<div className="col-12 col-md-8 ">
 										<h1>Work Experience</h1>
-										<hr class="short" />							
+										<hr className="short" />							
 										<p>	
 										
 											I've been a software engineer for nine years. I started my career using Java/JSP on the back-end. But I quickly transitioned to the front-end, using mainly jQuery.

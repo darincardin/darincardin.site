@@ -1,7 +1,7 @@
-import style from './style.css';
+import './style.css';
 
 const ErrorPage = () => { 
-	return ( <div className={style.error} >An Error Occurred... </div> );
+	return ( <div >An Error Occurred... </div> );
 }
 
 export default ErrorPage;

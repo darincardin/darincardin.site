@@ -1,13 +1,14 @@
-import { Component } from 'preact';
-							
-import {StepBar} from 'react-widgets4';
+import React from 'react';
+
+				
+import {StepBar} from 'react-widgets7';
 
 
 
-class Widget extends Component{
+class Widget_StepBar extends React.Component{
 	
 	state = { step:1 };
-	array = ["A","B","C", "E"];	
+	array = ['A','B','C','D'];	
 	
 	change = ()=>{
 		var next =  (this.state.step< this.array.length) ? ++this.state.step : 1;
@@ -26,13 +27,13 @@ class Widget extends Component{
 
 
 export default {
-	widget: Widget,
+	widget: Widget_StepBar,
 	title: "Step Bar",
 	path: "/react/step",
-	url:"https://github.com/darincardin/stepbar",
+	url:"https://github.com/darincardin/react-widgets/tree/master/stepbar",
     code: 
 `var state = {step:1};			
-var array = ["A","B","C", "E"];	
+var array = ["A","B","C", "D"];	
 				
 <StepBar index={state.step} array={array}/>`,
   

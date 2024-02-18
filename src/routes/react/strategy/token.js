@@ -1,8 +1,9 @@
-import { Component } from 'preact';
+import React from 'react';
 
-import {Tokenizer} from 'react-widgets4';
 
-class Widget  extends Component{
+import {Tokenizer} from 'react-widgets7';
+
+class Widget_Tokenizer  extends React.Component{
 	
 	state = {tokens: [] } ;
 	
@@ -13,8 +14,7 @@ class Widget  extends Component{
 	}	
 	
 	submit = ()=>{
-		alert(this.state.tokens.join(', '))
-	//	
+		alert(this.state.tokens.join(', '));
 	}
 	
 	render = ()=>(
@@ -33,15 +33,18 @@ class Widget  extends Component{
 
 
 export default {
-	widget: Widget,
+	widget: Widget_Tokenizer,
 	title: "Tokenizer",
 	path: "/react/token",
-	url:"https://github.com/darincardin/tokenizer",
+	url:"https://github.com/darincardin/react-widgets/tree/master/tokenizer",
 	code: `<Tokenizer tokens={this.state.tokens} setState={this.onChange}  />`,
 	text: `					
 	<div>
-		This React widget creates tokens from your inputs.
+		This React widget creates tokens from your inputs:
 		<ul>
+		
+			<li>Field attached to the React state</li>
+			<li>Tokens can be added and deleted</li>
 			<li>Duplicate tokens are blocked</li>
 			<li>Widget built with React and Bootstrap</li>
 		</ul>					

@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import React from 'react';
 
 import './styles.scss';
 
@@ -18,13 +18,13 @@ var Coding = props => {
 
 								{StrategyList.map(w=>(	
 						
-									<div name="card-multipanel">					
+									<div key={w.title} name="card-multipanel">					
 											<div>
 												<h3>{w.title}</h3>
-												<hr class="short" />
+												<hr className="short" />
 												
 												<div dangerouslySetInnerHTML={{ __html: w.text }} />
-												<a target="_blank" href={w.url} >GitHub</a>												
+												<a name="github" target="_blank" href={w.url} >GitHub</a>												
 											</div>
 												
 											<div>

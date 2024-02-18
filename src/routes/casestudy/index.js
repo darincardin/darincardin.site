@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './styles.scss';
 
 import ImgLoad from '../../components/common/loadimage/ImgLoad.jsx'   
@@ -14,9 +14,9 @@ var CaseStudy = props => {
 				<div  className="container-fluid g-0">
 				
 					<div name="card-center" >
-						<div  class="row" >
+						<div  className="row" >
 						
-								<div class="col-12">
+								<div className="col-12">
 									<center>
 										<h1>Case Study </h1>
 										<h1><b>Saint Paul's Church Fundraiser</b></h1>
@@ -26,12 +26,12 @@ var CaseStudy = props => {
 							
 							
 								
-								<div  class="col-12">
+								<div  className="col-12">
 								
 								
 										<h3>The Problem</h3>
 									
-										<ImgLoad name="img" width="300px" height="225px" className="photo" src="assets/photos/x-church.jpg" />
+										<ImgLoad name="img" style={{'width':'300px', 'height':'225px'}} className="photo" src="assets/photos/x-church.jpg" />
 										
 										Saint Paul's Church runs a yearly fundraiser in which customers preorder lobster rolls.
 										All the orders had to be taken over the phone.
@@ -50,7 +50,7 @@ var CaseStudy = props => {
 										</ul>	
 								</div>
 						
-								<div class="col-12   col-sm-6">
+								<div className="col-12   col-sm-6">
 								
 												<h3>Technical Details</h3>
 												<ul>
@@ -62,7 +62,7 @@ var CaseStudy = props => {
 												</ul>
 							    </div>
 							    
-								<div class="col-12   col-sm-6">
+								<div className="col-12   col-sm-6">
 							
 												<h3>Demo Links</h3>
 												<ul>

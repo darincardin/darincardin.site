@@ -1,11 +1,11 @@
-import { Component } from 'preact';
+import React from 'react';
 
 
 import 'jquery-plugins1/dist/counter.js';
 import 'jquery-plugins1/dist/counter.css';
 
 
-class Widget extends Component{
+class Widget_Counter extends React.Component{
 	
 	state = {increment:false}
 	
@@ -38,7 +38,7 @@ class Widget extends Component{
 
 	render = () => (
 		<div>
-			<div class="counter" />
+			<div className="counter" />
 			
 			<button onClick={this.toggleIncrement} className="btn btn-secondary" style={{width:'100px'}}>
 				{this.state.increment?"Stop":"Increment"} 
@@ -54,12 +54,12 @@ class Widget extends Component{
 
 
 export default {
-	widget: Widget,
+	widget: Widget_Counter,
 	title: "Counter",
 	path: "/react/counter",
-	url:"https://github.com/darincardin/counter",
+	url:"https://github.com/darincardin/jquery-plugins/tree/main/counter",
     code: `var counter = $('.counter').counter();`, 
-    text: "This JQuery plugin can be incremented or set to a specific value."
+    text: "This JQuery plugin can be incremented or set to a specific value. Widget increments in an animated, rotational fashion."
 }
 
 

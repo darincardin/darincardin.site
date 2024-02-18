@@ -1,7 +1,8 @@
+import React from 'react';
 
 import  Navigation  from "./navigation.js";
 
-import styles from './styles.scss';
+import './styles.scss';
   
 
 var Header =  props => {

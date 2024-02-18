@@ -54,6 +54,8 @@ button {
 [name=background-image] {
 		top:0;
 		left:0;
+		right:0;
+		bottom:0;
 		z-index:-1;
 		position: fixed!important;
 		width: 100%;
@@ -207,6 +209,7 @@ h4{
 	
 img {
 	vertical-align: top;
+	width:300px;
 }
 
 
@@ -276,7 +279,6 @@ form {
 			hr { border:solid black 1px!important;}
 		}
 
-	
 
 			.error-msg {
 			    font-weight: 600;
@@ -284,4 +286,56 @@ form {
 			    background: transparent!important;
 			}
 			
+			
+.list td:last-child {
+    width: 80px!important;
+
+}		
 	
+	.list {
+		max-width: 100%!important;
+		[name=delete]{
+			text-decoration: underline!important;
+			color:blue!important;
+		}
+	}
+	
+	[name=search]{
+		box-shadow: none!important;
+	}
+	
+	
+	
+	.test{
+		position:relative;
+		
+		display:inline-block;
+		
+	}
+	
+
+
+	[name=gallery-image] {
+		margin: 0 3px;
+		margin-bottom:20px;
+	}
+	
+
+	
+	.gallery-txt {
+		text-align: center;
+		position: absolute;
+		top: 68px;
+		left: 0;
+		right: 0;
+		color: #4e4e4e;
+		line-height: 10px;
+		font-size: 9px;
+		font-weight: 400;
+	}
+	
+	
+	
+.pointer {
+	cursor:pointer;
+}

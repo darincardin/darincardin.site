@@ -1,10 +1,9 @@
-import {Component} from "preact";
 import React from "react";
 
 import 'jquery-plugins1/dist/loadimage.js';
 import 'jquery-plugins1/dist/loadimage.css';
 
-class ImgLoad extends Component{
+class ImgLoad extends React.Component{
 
 	constructor(props){
 		super(props);	
@@ -12,11 +11,12 @@ class ImgLoad extends Component{
 	}
 
 	componentDidMount(){     
+
         $(this.elem.current).loadimage( this.props.style );
 	}
 
 	render() {
-		return ( <div ref={this.elem} name={this.props.name} src={this.props.src} href={this.props.href}></div> );
+		return ( <div ref={this.elem} name={this.props.name} src={this.props.src} title={this.props.title} newtab={this.props.newTab?"1":""} desc={this.props.desc} href={this.props.href}></div> );
 	}
 }
 

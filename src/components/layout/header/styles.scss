@@ -105,3 +105,28 @@ header {
 	}	
 }		
 
+@media only screen and (max-width: 400px) {	
+
+
+	header{ 
+		
+			img {
+		
+			}
+			
+		&>ul {		
+		
+			
+			&>li{
+
+			
+				a {
+					font-size: 12px;	
+				
+				}	
+			
+			}
+		}
+					
+	}	
+}		

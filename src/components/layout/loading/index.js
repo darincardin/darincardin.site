@@ -1,7 +1,7 @@
-import {Component} from 'preact'
+import React from 'react';
 
 
-class Loading extends Component {
+class Loading extends React.Component {
 	
 	render() {
 

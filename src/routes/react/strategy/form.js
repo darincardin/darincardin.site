@@ -1,13 +1,14 @@
-import { Component } from 'preact';
+import React from 'react';
 
-import {Form} from 'react-widgets4';
+
+import {Form} from 'react-widgets7';
 
 const newOrder = { id:"1", name:"", phone:"", amount:"", deliver: false}
 
 
 
 
-class	Widget extends Component {
+class Widget_Form extends React.Component {
 
 	
 	state = {object:{...newOrder}}
@@ -41,10 +42,10 @@ class	Widget extends Component {
 
 
 export default {
-	widget: Widget,
+	widget: Widget_Form,
 	title: "Form",
 	path: "/react/form",
-	url:"https://github.com/darincardin/form",
+	url:"https://github.com/darincardin/react-widgets/tree/master/form",
 	code: 
 `const fields = [
   {label:"Personal Info", tag:"header"},
