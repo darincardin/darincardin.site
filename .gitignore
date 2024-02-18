@@ -8,6 +8,8 @@ org.eclipse.*
 .settings
 package-lock.json
 /src/assets/photos/*
-
+/src/assets/travel/*
+/.github
+/.git
 
 
