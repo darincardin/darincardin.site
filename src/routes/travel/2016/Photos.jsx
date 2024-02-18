@@ -32,26 +32,20 @@ var Gallery = props =>{
 		{name:'11', txt:"Bird in the Everglades", desc:'Everglades, FL'  },
 		
 		
-		{name:'12', txt:"Dallas", desc:'Dallas, TX'  },
-		{name:'13', txt:"Dallas", desc:'Dallas, TX' },
 
-	
-		{name:'20', txt:'Petrified Forest' , desc:"Somewhere" },
-		
-		{name:'21', txt:'Zoo', desc:"Albequercy, NM" },
-		{name:'22', txt:'Zoo' , desc:"Albequercy, NM" },
+		{name:'20', txt:'Dallas' , desc:"Dallas, TX" },
+		{name:'21', txt:"Dallas", desc:'Dallas, TX' },
+		{name:'22', txt:'Death Valley' , desc:"Death Valley" },
 		{name:'25', txt:'Zoo' , desc:"Albequercy, NM" },
-		{name:'26', txt:'Skyline ' , desc:"Albequercy, NM" },
-		
-	
-		{name:'27', txt:'xxxx', desc:"Death Valley, CA" } ,
-		{name:'28', txt:'xxxx'  , desc:"Las Vegas, NV" } ,
-		{name:'35', txt:'xxx', desc: "Las Vegas, NV" },
-		{name:'36', txt:'xxx', desc: "Las Vegas, NV" },
-		{name:'37', txt:'xxx', desc:"Las Vegas, NV"  },
-		{name:'38', txt:'xxx',  desc:"Las Vegas, NV"  },,
-		{name:'39', txt:'xxx' , desc:"Las Vegas, NV"  },
-		{name:'40', txt:'xxx' , desc:"Las Vegas, NV"  },
+		{name:'26', txt:'Zoo ' , desc:"Albequercy, NM" },
+		{name:'27', txt:'Zoo', desc:"Albequercy, NM" } ,
+		{name:'28', txt:'Skyline'  , desc:"Albequercy, NM" } ,
+		{name:'35', txt:'Death Valley', desc: "California" },
+		{name:'36', txt:'Bellagio', desc: "Las Vegas, NV" },
+		{name:'37', txt:'Flamingo Resort', desc:"Las Vegas, NV"  },
+		{name:'38', txt:'Ceasars Palace',  desc:"Las Vegas, NV"  },,
+		{name:'39', txt:'Paris Resort' , desc:"Las Vegas, NV"  },
+		{name:'40', txt:'Inside Flamigo Resort' , desc:"Las Vegas, NV"  },
 		
 		{name:'45', txt:'Big Arch' , desc:"Arches Park"  },
 		{name:'46', txt:'Big Arch' , desc:"Arches Park"  },

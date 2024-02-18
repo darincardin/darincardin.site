@@ -123,7 +123,7 @@ var Gallery = props =>{
 		<div>
 			{gallery.map((v, i)=>
 				<span key={i} className="test">
-					<ImgLoad  name="gallery-image" style={style} title={v.txt} desc={v.desc}   src={`/assets/travel/${v.name}.JPG`} href={`/assets/travel/${v.name}.JPG`}   />  
+					<ImgLoad  name="gallery-image" style={style} title={v.txt} desc={v.desc}   src={`/assets/travel/2012/${v.name}.JPG`} href={`/assets/travel/2012/${v.name}.JPG`}   />  
 					<span className="gallery-txt">{v.txt}</span>
 				</span>
 			)}

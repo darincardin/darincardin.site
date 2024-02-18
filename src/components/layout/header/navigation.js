@@ -44,7 +44,6 @@ class Navigation extends React.Component {
 		      <Nav as="ul" onClick={()=>this.toggle('travel')} style={{display:this.state.travel?'block':'none'}} >
 		      	 <Nav.Item  as="li"><NavLink to="/travel2012">2012</NavLink></Nav.Item> 
 		      	 <Nav.Item  as="li"><NavLink to="/travel2016">2016</NavLink></Nav.Item> 
-				 <Nav.Item  as="li"><NavLink to="/travel2019">2019</NavLink></Nav.Item> 
 			  </Nav>
 	      </Nav.Item>  
 
